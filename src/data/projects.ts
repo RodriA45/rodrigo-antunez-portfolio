@@ -23,7 +23,7 @@ export const projects: Project[] = [
   {
     id: 'turnos-pagina-web',
     title: 'Sistema de Gestión de Turnos Web',
-    description: 'Plataforma integral desarrollada a medida para un cliente real (MAC Estética). Resolvió el problema de solapamiento de horarios automatizando la agenda y enviando notificaciones en tiempo real por WhatsApp y Email. Desplegada exitosamente en producción.',
+    description: 'Plataforma integral desarrollada a medida para un cliente real de seguridad electrónica. Resolvió el problema de solapamiento de horarios automatizando la agenda y enviando notificaciones en tiempo real por WhatsApp y Email. Desplegada exitosamente en producción.',
     technologies: ['HTML', 'JavaScript', 'Python/Flask', 'PostgreSQL', 'Render'],
     demoUrl: 'https://monitoreo360seguridad.com/',
     imageUrl: imgTurnos,
