@@ -88,6 +88,7 @@
   transition: all var(--transition-fast);
   cursor: pointer;
   border: none;
+  text-align: center;
 }
 
 .btn-primary {
@@ -102,29 +103,47 @@
   color: white;
 }
 
-.social-links {
-  display: flex;
-  gap: var(--spacing-md);
-}
-
-.social-link {
-  color: var(--text-secondary);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  background: var(--bg-secondary);
-  border: 1px solid var(--border-subtle);
-  transition: all var(--transition-fast);
-}
-
-.social-link:hover {
+.btn-secondary {
+  background-color: transparent;
   color: var(--text-primary);
+  border: 1px solid var(--border-strong);
+}
+
+.btn-secondary:hover {
+  background-color: var(--bg-tertiary);
   border-color: var(--text-primary);
-  background: var(--bg-tertiary);
   transform: translateY(-2px);
+}
+
+.tech-stack-banner {
+  margin-top: var(--spacing-xl);
+  border-top: 1px solid var(--border-subtle);
+  padding-top: var(--spacing-lg);
+}
+
+.tech-stack-title {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  letter-spacing: 2px;
+  margin-bottom: var(--spacing-md);
+}
+
+.tech-stack-icons {
+  display: flex;
+  gap: var(--spacing-lg);
+  align-items: center;
+  color: var(--text-secondary);
+  font-size: 1.8rem;
+}
+
+.tech-stack-icons svg {
+  transition: color var(--transition-fast), transform var(--transition-fast);
+}
+
+.tech-stack-icons svg:hover {
+  color: var(--text-primary);
+  transform: translateY(-3px);
 }
 
 @media (max-width: 768px) {
@@ -149,11 +168,11 @@
 
   .hero-actions .btn {
     width: 100%;
-    text-align: center;
   }
 
-  .social-links {
+  .tech-stack-icons {
     justify-content: center;
-    margin-top: var(--spacing-sm);
+    flex-wrap: wrap;
+    gap: var(--spacing-md);
   }
 }

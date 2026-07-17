@@ -4,11 +4,12 @@ import './ProjectCard.css';
 
 interface ProjectCardProps {
   project: Project;
+  isHero?: boolean;
 }
 
-export function ProjectCard({ project }: ProjectCardProps) {
+export function ProjectCard({ project, isHero }: ProjectCardProps) {
   return (
-    <div className="project-card glass-panel">
+    <div className={`project-card glass-panel ${isHero ? 'hero-project' : ''}`}>
       {project.imageUrl && (
         <div className="project-image-container">
           <img src={project.imageUrl} alt={project.title} className="project-image" loading="lazy" />

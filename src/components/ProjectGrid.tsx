@@ -13,8 +13,8 @@ export function ProjectGrid() {
         <p className="section-subtitle">Una selección de mis mejores trabajos y aplicaciones web.</p>
         
         <div className="project-grid featured">
-          {featuredProjects.map(project => (
-            <ProjectCard key={project.id} project={project} />
+          {featuredProjects.map((project, index) => (
+            <ProjectCard key={project.id} project={project} isHero={index === 0} />
           ))}
         </div>
 
