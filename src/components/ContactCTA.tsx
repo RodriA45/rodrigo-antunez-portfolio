@@ -12,7 +12,7 @@ export function ContactCTA() {
           </p>
           
           <div className="cta-buttons">
-            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=ridriantunez2016@gmail.com" target="_blank" rel="noopener noreferrer" className="btn btn-primary cta-btn">
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=rodrigo.antunez.dev@gmail.com" target="_blank" rel="noopener noreferrer" className="btn btn-primary cta-btn">
               <FaEnvelope /> Enviame un Email
             </a>
             <a href="https://wa.me/543865227220" target="_blank" rel="noopener noreferrer" className="btn btn-secondary cta-btn">
