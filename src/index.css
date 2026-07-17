@@ -69,6 +69,20 @@ a:hover {
   border-radius: var(--radius-lg);
 }
 
+/* Container for layout */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-lg);
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 var(--spacing-md);
+  }
+}
+
 /* Typography Utility Classes */
 .text-gradient {
   background: linear-gradient(to right, var(--text-primary), var(--text-muted));
