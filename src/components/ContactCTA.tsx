@@ -23,7 +23,7 @@ export function ContactCTA() {
           <div className="cta-socials">
             <p className="cta-socials-text">O encuéntrame en mis redes profesionales:</p>
             <div className="social-links-row">
-              <a href="https://www.linkedin.com/in/rodrigo-antunez-9523a6380" target="_blank" rel="noopener noreferrer" className="social-link" aria-label="LinkedIn">
+              <a href="https://www.linkedin.com/in/rodrigo-antunez-" target="_blank" rel="noopener noreferrer" className="social-link" aria-label="LinkedIn">
                 <FaLinkedin size={20} />
               </a>
               <a href="https://github.com/RodriA45" target="_blank" rel="noopener noreferrer" className="social-link" aria-label="GitHub">
