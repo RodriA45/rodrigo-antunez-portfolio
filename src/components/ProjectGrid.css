@@ -34,7 +34,21 @@
 }
 
 @media (max-width: 768px) {
+  .projects-section {
+    padding: var(--spacing-lg) 0;
+  }
+
   .project-grid {
     grid-template-columns: 1fr;
+    gap: var(--spacing-md);
+  }
+  
+  .section-title {
+    font-size: 1.5rem;
+  }
+  
+  .secondary-title {
+    margin-top: var(--spacing-lg);
+    font-size: 1.3rem;
   }
 }

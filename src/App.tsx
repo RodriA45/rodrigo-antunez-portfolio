@@ -9,7 +9,7 @@ function App() {
         <ProjectGrid />
       </main>
       
-      <footer className="footer" style={{ textAlign: 'center', padding: '2rem', color: 'var(--text-muted)', borderTop: '1px solid var(--border-subtle)', marginTop: '4rem' }}>
+      <footer className="footer" style={{ textAlign: 'center', padding: 'var(--spacing-lg) var(--spacing-md)', color: 'var(--text-muted)', borderTop: '1px solid var(--border-subtle)', marginTop: 'var(--spacing-xl)' }}>
         <p>© {new Date().getFullYear()} Rodrigo Antúnez. Desarrollador Full Stack.</p>
       </footer>
     </div>
