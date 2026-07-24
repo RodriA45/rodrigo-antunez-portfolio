@@ -7,6 +7,9 @@ import imgCleansweep from '../assets/images/cleansweep.png';
 import imgFixture from '../assets/images/fixture-mundial.png';
 import imgMacEstetica from '../assets/images/mac-estetica-vehicular.png';
 import imgEnglish from '../assets/images/english.png';
+import imgKatja from '../assets/images/katja-handmade.png';
+import imgPataRed from '../assets/images/patared.png';
+import imgStreamFlow from '../assets/images/streamflow.png';
 
 export interface Project {
   id: string;
@@ -20,6 +23,32 @@ export interface Project {
 }
 
 export const projects: Project[] = [
+  {
+    id: 'streamflow-app',
+    title: 'StreamFlow',
+    description: 'Plataforma de streaming de video con diseño moderno e interfaz inmersiva. Desarrollada para ofrecer una experiencia de usuario fluida, navegación por categorías y visualización de contenido al estilo Netflix.',
+    technologies: ['React', 'CSS', 'JavaScript'],
+    imageUrl: imgStreamFlow,
+    featured: true
+  },
+  {
+    id: 'patared-veterinaria',
+    title: 'PataRed - Red Médica',
+    description: 'Plataforma web para una red médica veterinaria. Permite a los usuarios buscar especialistas, consultar cartillas médicas y conocer los planes de cobertura para sus mascotas mediante una interfaz amigable.',
+    technologies: ['React', 'CSS', 'JavaScript'],
+    demoUrl: 'https://obra-social-veterinaria.vercel.app/',
+    imageUrl: imgPataRed,
+    featured: true
+  },
+  {
+    id: 'katja-handmade',
+    title: 'Katja Handmade',
+    description: 'Landing page e-commerce para marca de productos artesanales. Destaca por su diseño limpio, estética cuidada y catálogo interactivo para resaltar productos únicos y conectar con los clientes.',
+    technologies: ['React', 'CSS', 'JavaScript'],
+    demoUrl: 'https://katja-handmade-web.vercel.app/',
+    imageUrl: imgKatja,
+    featured: true
+  },
   {
     id: 'turnos-pagina-web',
     title: 'Sistema de Gestión de Turnos Web',
