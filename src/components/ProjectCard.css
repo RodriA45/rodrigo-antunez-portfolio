@@ -67,12 +67,14 @@
   overflow: hidden;
   border-bottom: 1px solid var(--border-subtle);
   position: relative;
+  background-color: var(--bg-primary); /* Fondo oscuro por si hay barras */
 }
 
 .project-image {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain; /* Cambiado de cover a contain para no cortar */
+  object-position: center;
   transition: transform var(--transition-normal);
 }
 
