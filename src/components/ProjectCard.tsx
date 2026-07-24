@@ -1,4 +1,5 @@
-import { FaGithub, FaExternalLinkAlt, FaWhatsapp } from 'react-icons/fa';
+import { useState } from 'react';
+import { FaGithub, FaExternalLinkAlt, FaWhatsapp, FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 import type { Project } from '../data/projects';
 import './ProjectCard.css';
 
@@ -8,11 +9,52 @@ interface ProjectCardProps {
 }
 
 export function ProjectCard({ project, isHero }: ProjectCardProps) {
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const images = project.imageUrls && project.imageUrls.length > 0 
+    ? project.imageUrls 
+    : (project.imageUrl ? [project.imageUrl] : []);
+
+  const nextImage = (e: React.MouseEvent) => {
+    e.preventDefault();
+    setCurrentImageIndex((prev) => (prev + 1) % images.length);
+  };
+
+  const prevImage = (e: React.MouseEvent) => {
+    e.preventDefault();
+    setCurrentImageIndex((prev) => (prev - 1 + images.length) % images.length);
+  };
+
+  const setIndex = (e: React.MouseEvent, idx: number) => {
+    e.preventDefault();
+    setCurrentImageIndex(idx);
+  };
+
   return (
     <div className={`project-card glass-panel ${isHero ? 'hero-project' : ''}`}>
-      {project.imageUrl && (
+      {images.length > 0 && (
         <div className="project-image-container">
-          <img src={project.imageUrl} alt={project.title} className="project-image" loading="lazy" />
+          <img src={images[currentImageIndex]} alt={project.title} className="project-image" loading="lazy" />
+          
+          {images.length > 1 && (
+            <>
+              <button className="carousel-btn prev-btn" onClick={prevImage} aria-label="Imagen anterior">
+                <FaChevronLeft size={14} />
+              </button>
+              <button className="carousel-btn next-btn" onClick={nextImage} aria-label="Siguiente imagen">
+                <FaChevronRight size={14} />
+              </button>
+              <div className="carousel-dots">
+                {images.map((_, idx) => (
+                  <button 
+                    key={idx} 
+                    className={`carousel-dot ${idx === currentImageIndex ? 'active' : ''}`}
+                    onClick={(e) => setIndex(e, idx)}
+                    aria-label={`Ir a imagen ${idx + 1}`}
+                  />
+                ))}
+              </div>
+            </>
+          )}
         </div>
       )}
       <div className="project-content">

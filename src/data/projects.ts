@@ -10,6 +10,11 @@ import imgEnglish from '../assets/images/english.png';
 import imgKatja from '../assets/images/katja-handmade.png';
 import imgPataRed from '../assets/images/patared.png';
 import imgStreamFlow from '../assets/images/streamflow.png';
+import imgStreamFlow2 from '../assets/images/streamflow-2.png';
+import imgStreamFlow3 from '../assets/images/streamflow-3.png';
+import imgStreamFlow4 from '../assets/images/streamflow-4.png';
+import imgStreamFlow5 from '../assets/images/streamflow-5.png';
+import imgStreamFlow6 from '../assets/images/streamflow-6.png';
 
 export interface Project {
   id: string;
@@ -19,6 +24,7 @@ export interface Project {
   githubUrl?: string;
   demoUrl?: string;
   imageUrl?: string;
+  imageUrls?: string[];
   featured?: boolean;
   customCTA?: {
     text: string;
@@ -33,9 +39,10 @@ export const projects: Project[] = [
     description: 'Plataforma de streaming de video con diseño moderno e interfaz inmersiva. Desarrollada para ofrecer una experiencia de usuario fluida, navegación por categorías y visualización de contenido al estilo Netflix.',
     technologies: ['React', 'CSS', 'JavaScript'],
     imageUrl: imgStreamFlow,
+    imageUrls: [imgStreamFlow, imgStreamFlow2, imgStreamFlow3, imgStreamFlow4, imgStreamFlow5, imgStreamFlow6],
     featured: true,
     customCTA: {
-      text: '¿Quieres ver películas gratis? Háblame al privado',
+      text: '¿Quieres disfrutar de las mejores Películas, Series y Anime?',
       url: 'https://wa.me/5493865227220'
     }
   },
