@@ -20,6 +20,10 @@ export interface Project {
   demoUrl?: string;
   imageUrl?: string;
   featured?: boolean;
+  customCTA?: {
+    text: string;
+    url: string;
+  };
 }
 
 export const projects: Project[] = [
@@ -29,7 +33,11 @@ export const projects: Project[] = [
     description: 'Plataforma de streaming de video con diseño moderno e interfaz inmersiva. Desarrollada para ofrecer una experiencia de usuario fluida, navegación por categorías y visualización de contenido al estilo Netflix.',
     technologies: ['React', 'CSS', 'JavaScript'],
     imageUrl: imgStreamFlow,
-    featured: true
+    featured: true,
+    customCTA: {
+      text: '¿Quieres ver películas gratis? Háblame al privado',
+      url: 'https://wa.me/5493865227220'
+    }
   },
   {
     id: 'patared-veterinaria',
