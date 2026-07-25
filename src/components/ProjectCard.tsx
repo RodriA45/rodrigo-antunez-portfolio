@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { FaGithub, FaExternalLinkAlt, FaWhatsapp, FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 import type { Project } from '../data/projects';
+import { ImageModal } from './ImageModal';
 import './ProjectCard.css';
 
 interface ProjectCardProps {
@@ -10,6 +11,7 @@ interface ProjectCardProps {
 
 export function ProjectCard({ project, isHero }: ProjectCardProps) {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [isLightboxOpen, setIsLightboxOpen] = useState(false);
   const images = project.imageUrls && project.imageUrls.length > 0 
     ? project.imageUrls 
     : (project.imageUrl ? [project.imageUrl] : []);
@@ -31,11 +33,17 @@ export function ProjectCard({ project, isHero }: ProjectCardProps) {
 
   return (
     <div className={`project-card glass-panel ${isHero ? 'hero-project' : ''}`}>
+      {project.isMockup && (
+        <div className="mockup-badge">
+          Maqueta (No en producción)
+        </div>
+      )}
       {images.length > 0 && (
-        <div className="project-image-container">
-          <img src={images[currentImageIndex]} alt={project.title} className="project-image" loading="lazy" />
-          
-          {images.length > 1 && (
+        <>
+          <div className="project-image-container" onClick={() => setIsLightboxOpen(true)} style={{ cursor: 'pointer' }}>
+            <img src={images[currentImageIndex]} alt={project.title} className="project-image" loading="lazy" />
+            
+            {images.length > 1 && (
             <>
               <button className="carousel-btn prev-btn" onClick={prevImage} aria-label="Imagen anterior">
                 <FaChevronLeft size={14} />
@@ -56,6 +64,21 @@ export function ProjectCard({ project, isHero }: ProjectCardProps) {
             </>
           )}
         </div>
+        <ImageModal
+          images={images}
+          currentIndex={currentImageIndex}
+          isOpen={isLightboxOpen}
+          onClose={() => setIsLightboxOpen(false)}
+          onNext={(e?: React.MouseEvent) => {
+            if (e) e.stopPropagation();
+            setCurrentImageIndex((prev) => (prev + 1) % images.length);
+          }}
+          onPrev={(e?: React.MouseEvent) => {
+            if (e) e.stopPropagation();
+            setCurrentImageIndex((prev) => (prev - 1 + images.length) % images.length);
+          }}
+        />
+        </>
       )}
       <div className="project-content">
         <h3 className="project-title">{project.title}</h3>

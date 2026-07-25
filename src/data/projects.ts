@@ -34,6 +34,7 @@ export interface Project {
     text: string;
     url: string;
   };
+  isMockup?: boolean;
 }
 
 export const projects: Project[] = [
@@ -67,7 +68,8 @@ export const projects: Project[] = [
     technologies: ['React', 'CSS', 'JavaScript'],
     demoUrl: 'https://obra-social-veterinaria.vercel.app/',
     imageUrl: imgPataRed,
-    featured: true
+    featured: true,
+    isMockup: true
   },
   {
     id: 'katja-handmade',
@@ -94,7 +96,8 @@ export const projects: Project[] = [
     technologies: ['JavaScript', 'WebSockets', 'HTML/CSS'],
     demoUrl: 'https://profesor-interactivo.vercel.app',
     imageUrl: imgProfesor,
-    featured: true
+    featured: true,
+    isMockup: true
   },
   {
     id: 'fintrack-finance-manager',
@@ -103,7 +106,8 @@ export const projects: Project[] = [
     technologies: ['TypeScript', 'React', 'CSS'],
     githubUrl: 'https://github.com/RodriA45/fintrack-finance-manager',
     imageUrl: imgFinTrack,
-    featured: true
+    featured: true,
+    isMockup: true
   },
   {
     id: 'jarvis-desktop-assistant',
@@ -122,7 +126,8 @@ export const projects: Project[] = [
     githubUrl: 'https://github.com/RodriA45/mac-estetica-vehicular',
     demoUrl: 'https://rodria45.github.io/mac-estetica-vehicular/',
     imageUrl: imgMacEstetica,
-    featured: false
+    featured: false,
+    isMockup: true
   },
   {
     id: 'english-for-developers',
