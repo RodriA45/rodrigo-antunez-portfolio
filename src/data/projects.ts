@@ -143,9 +143,12 @@ export const projects: Project[] = [
     title: 'CleanSweep CLI',
     description: 'Herramienta de línea de comandos que automatiza la purga de dependencias y cachés en entornos de desarrollo, optimizando los tiempos de backup en servidores.',
     technologies: ['JavaScript', 'Node.js', 'CLI'],
-    githubUrl: 'https://github.com/RodriA45/cleansweep-dev',
     imageUrl: imgCleansweep,
-    featured: false
+    featured: false,
+    customCTA: {
+      text: '¿Quieres un Limpiador de Dependencias y espacio para tus proyectos de programación? Háblame',
+      url: 'https://wa.me/5493865227220'
+    }
   },
   {
     id: 'world-cup-2026-tracker',
@@ -162,8 +165,11 @@ export const projects: Project[] = [
     title: 'Win Optimizador R45',
     description: 'Script automatizado para optimización de sistemas operativos, manipulación de registros y protocolos de red a bajo nivel para maximizar rendimiento.',
     technologies: ['PowerShell', 'Windows API'],
-    githubUrl: 'https://github.com/RodriA45/win-optimizador-r45',
     imageUrl: imgWinOptimizador,
-    featured: false
+    featured: false,
+    customCTA: {
+      text: '¿Quieres una optimización? Háblame',
+      url: 'https://wa.me/5493865227220'
+    }
   }
 ];
