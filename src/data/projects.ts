@@ -15,6 +15,10 @@ import imgStreamFlow3 from '../assets/images/streamflow-3.png';
 import imgStreamFlow4 from '../assets/images/streamflow-4.png';
 import imgStreamFlow5 from '../assets/images/streamflow-5.png';
 import imgStreamFlow6 from '../assets/images/streamflow-6.png';
+import imgRutear from '../assets/images/rutear.png';
+import imgRutear2 from '../assets/images/rutear-2.png';
+import imgRutear3 from '../assets/images/rutear-3.png';
+import imgRutear4 from '../assets/images/rutear-4.png';
 
 export interface Project {
   id: string;
@@ -33,6 +37,16 @@ export interface Project {
 }
 
 export const projects: Project[] = [
+  {
+    id: 'rutear-simulador',
+    title: 'Rutear - Simulador de Viajes',
+    description: 'Aplicación web interactiva para planificar viajes en ruta por Sudamérica. Calcula con precisión costos de combustible, peajes y distancias, integrando mapas interactivos y consejos de viaje.',
+    technologies: ['React', 'JavaScript', 'CSS', 'Map APIs'],
+    demoUrl: 'https://rutear-simulador-viajes.vercel.app/',
+    imageUrl: imgRutear,
+    imageUrls: [imgRutear, imgRutear2, imgRutear3, imgRutear4],
+    featured: true
+  },
   {
     id: 'streamflow-app',
     title: 'StreamFlow',
