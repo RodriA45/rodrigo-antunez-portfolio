@@ -1,0 +1,76 @@
+{
+  "nav": {
+    "projects": "Proyectos",
+    "about": "Sobre Mí",
+    "services": "Servicios",
+    "skills": "Habilidades",
+    "contact": "Contacto"
+  },
+  "services": {
+    "title": "¿Qué puedo hacer por tu negocio?",
+    "subtitle": "Soluciones digitales a medida para potenciar tu presencia en línea y optimizar tus procesos.",
+    "web": {
+      "title": "Creación de Páginas Web",
+      "desc": "Sitios web modernos, rápidos y optimizados para destacar tu marca."
+    },
+    "landing": {
+      "title": "Landing Pages",
+      "desc": "Páginas de aterrizaje diseñadas estratégicamente para maximizar conversiones y ventas."
+    },
+    "systems": {
+      "title": "Sistemas de Gestión",
+      "desc": "Aplicaciones a medida para automatizar y administrar tu comercio local de forma eficiente."
+    }
+  },
+  "hero": {
+    "title": "Desarrollador Full Stack.",
+    "subtitle": "Transformo ideas en soluciones de software reales.",
+    "description": "Especializado en Python, React y arquitecturas backend. Diseño y desarrollo aplicaciones web escalables, intuitivas y enfocadas en resolver problemas de negocio reales.",
+    "btn_projects": "Ver mis proyectos",
+    "btn_contact": "Contactarme",
+    "tech_title": "TECNOLOGÍAS CORE"
+  },
+  "projects": {
+    "featured_title": "Proyectos Destacados",
+    "featured_subtitle": "Una selección de mis mejores trabajos y aplicaciones web.",
+    "other_title": "Otros Proyectos",
+    "code": "Código",
+    "demo": "Demo",
+    "filters": {
+      "all": "Todos",
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "fullstack": "Full Stack",
+      "data": "Data & Scripts"
+    },
+    "empty_title": "Próximamente más proyectos",
+    "empty_desc": "Aún no he subido proyectos exclusivos para esta categoría, pero estoy trabajando en cosas nuevas.",
+    "mockup_badge": "Maqueta",
+    "whatsapp_cta": "Hablar por WhatsApp"
+  },
+  "contact": {
+    "title": "¿Listo para llevar tu proyecto al siguiente nivel?",
+    "description": "Ya sea que busques un desarrollador backend sólido, un frontend detallista, o necesites crear una solución completa desde cero, estoy disponible para conversar.",
+    "name": "Nombre",
+    "email": "Tu Email",
+    "message": "Mensaje",
+    "send": "Enviar Mensaje",
+    "email_btn": "Enviame un Email",
+    "whatsapp_btn": "Hablemos por WhatsApp",
+    "socials": "O encuéntrame en mis redes profesionales:"
+  },
+  "about": {
+    "title": "Sobre mí",
+    "p1": "Con 19 años y finalizando mi Tecnicatura en Programación en la UTN, ya he dado el salto al mundo real desarrollando sistemas Full Stack para clientes.",
+    "p2": "Me apasiona construir software desde la base de datos hasta la interfaz de usuario, asegurando que cada pieza no solo funcione perfecto, sino que sea intuitiva, rápida y escale con el tiempo.",
+    "p3": "Más allá del código, busco entender el modelo de negocio para que las soluciones que programo generen un impacto real y cuantificable.",
+    "stat1_label": "Años",
+    "stat2_label": "Formación Técnica",
+    "stat3_label": "Tecnologías Dominadas",
+    "stat4_label": "Compromiso"
+  },
+  "skills": {
+    "title": "Habilidades Técnicas",
+    "subtitle": "Tecnologías con las que trabajo en el día a día."
+  }
+}

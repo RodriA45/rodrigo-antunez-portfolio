@@ -1,0 +1,76 @@
+{
+  "nav": {
+    "projects": "Projects",
+    "about": "About",
+    "services": "Services",
+    "skills": "Skills",
+    "contact": "Contact"
+  },
+  "services": {
+    "title": "What can I do for your business?",
+    "subtitle": "Custom digital solutions to boost your online presence and optimize your processes.",
+    "web": {
+      "title": "Web Development",
+      "desc": "Modern, fast, and optimized websites to make your brand stand out."
+    },
+    "landing": {
+      "title": "Landing Pages",
+      "desc": "Strategically designed landing pages to maximize conversions and sales."
+    },
+    "systems": {
+      "title": "Management Systems",
+      "desc": "Custom applications to automate and manage your local business efficiently."
+    }
+  },
+  "hero": {
+    "title": "Full Stack Developer.",
+    "subtitle": "Transforming ideas into real software solutions.",
+    "description": "Specialized in Python, React, and backend architectures. I design and develop scalable, intuitive web applications focused on solving real business problems.",
+    "btn_projects": "View Projects",
+    "btn_contact": "Contact Me",
+    "tech_title": "CORE TECHNOLOGIES"
+  },
+  "projects": {
+    "featured_title": "Featured Projects",
+    "featured_subtitle": "A selection of my best work and web applications.",
+    "other_title": "Other Projects",
+    "code": "Code",
+    "demo": "Demo",
+    "filters": {
+      "all": "All",
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "fullstack": "Full Stack",
+      "data": "Data & Scripts"
+    },
+    "empty_title": "More projects coming soon",
+    "empty_desc": "I haven't uploaded exclusive projects for this category yet, but I'm working on new things.",
+    "mockup_badge": "Mockup",
+    "whatsapp_cta": "Chat on WhatsApp"
+  },
+  "contact": {
+    "title": "Ready to take your project to the next level?",
+    "description": "Whether you're looking for a solid backend developer, a detail-oriented frontend, or need to build a complete solution from scratch, I'm available to chat.",
+    "name": "Name",
+    "email": "Your Email",
+    "message": "Message",
+    "send": "Send Message",
+    "email_btn": "Send an Email",
+    "whatsapp_btn": "Chat on WhatsApp",
+    "socials": "Or find me on my professional networks:"
+  },
+  "about": {
+    "title": "About me",
+    "p1": "At 19 and finishing my Technical Degree in Programming at UTN, I have already made the leap into the real world developing Full Stack systems for clients.",
+    "p2": "I am passionate about building software from the database to the user interface, ensuring that each piece not only works perfectly but is intuitive, fast, and scalable over time.",
+    "p3": "Beyond code, I seek to understand the business model so that the solutions I program generate a real and quantifiable impact.",
+    "stat1_label": "Years Old",
+    "stat2_label": "Technical Training",
+    "stat3_label": "Mastered Technologies",
+    "stat4_label": "Commitment"
+  },
+  "skills": {
+    "title": "Technical Skills",
+    "subtitle": "Technologies I work with on a daily basis."
+  }
+}

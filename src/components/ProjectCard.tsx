@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import { FaGithub, FaExternalLinkAlt, FaWhatsapp, FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 import type { Project } from '../data/projects';
 import { ImageModal } from './ImageModal';
@@ -10,6 +11,7 @@ interface ProjectCardProps {
 }
 
 export function ProjectCard({ project, isHero }: ProjectCardProps) {
+  const { t, i18n } = useTranslation();
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [isLightboxOpen, setIsLightboxOpen] = useState(false);
   const images = project.imageUrls && project.imageUrls.length > 0 
@@ -31,11 +33,15 @@ export function ProjectCard({ project, isHero }: ProjectCardProps) {
     setCurrentImageIndex(idx);
   };
 
+  // Idioma
+  const isEnglish = i18n.language === 'en';
+  const description = isEnglish && project.descriptionEn ? project.descriptionEn : project.description;
+
   return (
     <div className={`project-card glass-panel ${isHero ? 'hero-project' : ''}`}>
       {project.isMockup && (
         <div className="mockup-badge">
-          Maqueta (No en producción)
+          {t('projects.mockup_badge', 'Maqueta')}
         </div>
       )}
       {images.length > 0 && (
@@ -82,7 +88,7 @@ export function ProjectCard({ project, isHero }: ProjectCardProps) {
       )}
       <div className="project-content">
         <h3 className="project-title">{project.title}</h3>
-        <p className="project-description">{project.description}</p>
+        <p className="project-description">{description}</p>
         
         <div className="project-tech">
           {project.technologies.map(tech => (
@@ -101,36 +107,52 @@ export function ProjectCard({ project, isHero }: ProjectCardProps) {
             gap: '0.75rem' 
           }}>
             <p style={{ margin: 0, fontSize: '0.95rem', color: 'var(--text-primary)', fontWeight: 500 }}>
-              {project.customCTA.text}
+              {isEnglish && project.customCTA.textEn ? project.customCTA.textEn : project.customCTA.text}
             </p>
-            <a href={project.customCTA.url} target="_blank" rel="noopener noreferrer" style={{ 
-              display: 'inline-flex', 
-              alignItems: 'center', 
-              gap: '8px', 
-              color: '#25D366', 
-              fontWeight: 600, 
-              textDecoration: 'none',
-              transition: 'transform 0.2s ease'
-            }}
-            onMouseOver={(e) => e.currentTarget.style.transform = 'translateY(-2px)'}
-            onMouseOut={(e) => e.currentTarget.style.transform = 'translateY(0)'}>
-              <FaWhatsapp size={20} /> Hablar por WhatsApp
-            </a>
+            {project.customCTA.type === 'video' ? (
+              <a href={project.customCTA.url} target="_blank" rel="noopener noreferrer" style={{ 
+                display: 'inline-flex', 
+                alignItems: 'center', 
+                gap: '8px', 
+                color: 'var(--accent-primary)', 
+                fontWeight: 600, 
+                textDecoration: 'none',
+                transition: 'transform 0.2s ease'
+              }}
+              onMouseOver={(e) => e.currentTarget.style.transform = 'translateY(-2px)'}
+              onMouseOut={(e) => e.currentTarget.style.transform = 'translateY(0)'}>
+                <FaExternalLinkAlt size={18} /> {isEnglish ? 'Watch on GitHub' : 'Ver en GitHub'}
+              </a>
+            ) : (
+              <a href={project.customCTA.url} target="_blank" rel="noopener noreferrer" style={{ 
+                display: 'inline-flex', 
+                alignItems: 'center', 
+                gap: '8px', 
+                color: '#25D366', 
+                fontWeight: 600, 
+                textDecoration: 'none',
+                transition: 'transform 0.2s ease'
+              }}
+              onMouseOver={(e) => e.currentTarget.style.transform = 'translateY(-2px)'}
+              onMouseOut={(e) => e.currentTarget.style.transform = 'translateY(0)'}>
+                <FaWhatsapp size={20} /> {t('projects.whatsapp_cta', 'Hablar por WhatsApp')}
+              </a>
+            )}
           </div>
         )}
       </div>
       
       <div className="project-links">
         {project.githubUrl && (
-          <a href={project.githubUrl} target="_blank" rel="noopener noreferrer" className="project-link" aria-label="Ver código en GitHub">
+          <a href={project.githubUrl} target="_blank" rel="noopener noreferrer" className="project-link" aria-label={t('projects.code', 'Código')}>
             <FaGithub size={20} />
-            <span>Código</span>
+            <span>{t('projects.code', 'Código')}</span>
           </a>
         )}
         {project.demoUrl && (
-          <a href={project.demoUrl} target="_blank" rel="noopener noreferrer" className="project-link demo-link" aria-label="Ver demo en vivo">
+          <a href={project.demoUrl} target="_blank" rel="noopener noreferrer" className="project-link demo-link" aria-label={t('projects.demo', 'Demo')}>
             <FaExternalLinkAlt size={20} />
-            <span>Demo</span>
+            <span>{t('projects.demo', 'Demo')}</span>
           </a>
         )}
       </div>

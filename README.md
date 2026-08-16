@@ -16,10 +16,12 @@
 ## ✨ Características Principales
 
 - **Diseño Moderno:** Estética oscura profesional (*Dark Mode*) con toques sutiles de *glassmorphism* y micro-interacciones.
+- **Soporte Bilingüe Nativo:** Integración completa de i18next para traducción dinámica entre Inglés y Español en tiempo real.
 - **Arquitectura Escalable:** Construido con componentes funcionales de React para máxima reutilización y código limpio.
 - **Tipado Fuerte:** Desarrollado íntegramente en TypeScript para garantizar estabilidad y prever errores en tiempo de desarrollo.
 - **Privacidad Estratégica:** Los proyectos se cargan desde un archivo local, lo que permite mantener repositorios de código privados o corporativos en GitHub, sin perder la capacidad de exhibir demos y descripciones en la web.
-- **Mobile First:** Adaptabilidad perfecta en dispositivos móviles, tablets y escritorio.
+- **Mobile First 100%:** Adaptabilidad perfecta en dispositivos móviles, tablets y escritorio, incluyendo un menú de navegación optimizado y animaciones fluidas con Framer Motion.
+- **Contacto Directo (No-Backend):** Formularios que integran comunicación directa a WhatsApp y Email pre-completados, eliminando la dependencia de servidores intermedios.
 
 ## 🛠️ Tecnologías Core
 

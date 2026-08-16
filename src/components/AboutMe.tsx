@@ -1,38 +1,41 @@
+import { useTranslation } from 'react-i18next';
 import './AboutMe.css';
 
 export function AboutMe() {
+  const { t } = useTranslation();
+
   return (
     <section className="about-section" id="about">
       <div className="container">
         <div className="about-grid">
           <div className="about-content">
-            <h2 className="section-title">Sobre mí</h2>
+            <h2 className="section-title">{t('about.title')}</h2>
             <p className="about-text">
-              Con 19 años y finalizando mi Tecnicatura en Programación en la UTN, ya he dado el salto al mundo real desarrollando sistemas Full Stack para clientes.
+              {t('about.p1')}
             </p>
             <p className="about-text">
-              Me apasiona construir software desde la base de datos hasta la interfaz de usuario, asegurando que cada pieza no solo funcione perfecto, sino que sea intuitiva, rápida y escale con el tiempo.
+              {t('about.p2')}
             </p>
             <p className="about-text">
-              Más allá del código, busco entender el modelo de negocio para que las soluciones que programo generen un impacto real y cuantificable.
+              {t('about.p3')}
             </p>
           </div>
           <div className="about-stats glass-panel">
             <div className="stat-item">
               <h3 className="stat-number">19</h3>
-              <p className="stat-label">Años</p>
+              <p className="stat-label">{t('about.stat1_label')}</p>
             </div>
             <div className="stat-item">
               <h3 className="stat-number">UTN</h3>
-              <p className="stat-label">Formación Técnica</p>
+              <p className="stat-label">{t('about.stat2_label')}</p>
             </div>
             <div className="stat-item">
               <h3 className="stat-number">+5</h3>
-              <p className="stat-label">Tecnologías Dominadas</p>
+              <p className="stat-label">{t('about.stat3_label')}</p>
             </div>
             <div className="stat-item">
               <h3 className="stat-number">100%</h3>
-              <p className="stat-label">Compromiso</p>
+              <p className="stat-label">{t('about.stat4_label')}</p>
             </div>
           </div>
         </div>

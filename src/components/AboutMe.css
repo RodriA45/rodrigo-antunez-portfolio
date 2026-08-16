@@ -49,3 +49,13 @@
     gap: var(--spacing-lg);
   }
 }
+
+@media (max-width: 480px) {
+  .about-stats {
+    gap: var(--spacing-md);
+    padding: var(--spacing-md);
+  }
+  .stat-number {
+    font-size: 2rem;
+  }
+}
