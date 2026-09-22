@@ -1,4 +1,5 @@
 import { useTranslation } from 'react-i18next';
+import { ExperienceTimeline } from './ExperienceTimeline';
 import './AboutMe.css';
 
 export function AboutMe() {
@@ -39,6 +40,8 @@ export function AboutMe() {
             </div>
           </div>
         </div>
+        
+        <ExperienceTimeline />
       </div>
     </section>
   );

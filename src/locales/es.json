@@ -72,5 +72,23 @@
   "skills": {
     "title": "Habilidades Técnicas",
     "subtitle": "Tecnologías con las que trabajo en el día a día."
+  },
+  "timeline": {
+    "title": "Mi Trayectoria",
+    "item1": {
+      "year": "2025",
+      "title": "Inicios & Academia",
+      "desc": "Comienzo de mis estudios en la UTN (Tecnicatura Universitaria en Programación) y primeros pasos firmes en el mundo del desarrollo web."
+    },
+    "item2": {
+      "year": "Principios de 2026",
+      "title": "Primer Sistema en Producción",
+      "desc": "Desarrollo y venta exitosa de la plataforma 'Monitoreo 360 Seguridad', marcando mi inicio oficial como desarrollador Freelance."
+    },
+    "item3": {
+      "year": "Fines 2026 / 2027",
+      "title": "Futuro Graduado & Full Stack",
+      "desc": "Próximo a recibir mi título en la UTN. Desarrollando soluciones completas, escalables y premium como Estelar 3D."
+    }
   }
 }

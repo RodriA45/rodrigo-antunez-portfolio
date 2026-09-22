@@ -72,5 +72,23 @@
   "skills": {
     "title": "Technical Skills",
     "subtitle": "Technologies I work with on a daily basis."
+  },
+  "timeline": {
+    "title": "My Journey",
+    "item1": {
+      "year": "2025",
+      "title": "Beginnings & Academics",
+      "desc": "Started my Technical Degree in Programming at UTN and took my first solid steps in the web development world."
+    },
+    "item2": {
+      "year": "Early 2026",
+      "title": "First Production System",
+      "desc": "Successfully developed and sold the 'Monitoreo 360 Seguridad' platform, marking my official start as a Freelance developer."
+    },
+    "item3": {
+      "year": "Late 2026 / 2027",
+      "title": "Future Graduate & Full Stack",
+      "desc": "About to receive my degree at UTN. Developing complete, scalable, and premium solutions like Estelar 3D."
+    }
   }
 }
