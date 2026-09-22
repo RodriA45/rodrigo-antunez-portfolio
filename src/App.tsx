@@ -1,3 +1,4 @@
+import React, { useEffect } from 'react';
 import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
 import { AboutMe } from './components/AboutMe';
@@ -8,8 +9,23 @@ import { ContactCTA } from './components/ContactCTA';
 import { BackToTop } from './components/BackToTop';
 
 function App() {
+  useEffect(() => {
+    const handleMouseMove = (e: MouseEvent) => {
+      document.documentElement.style.setProperty('--mouse-x', `${e.clientX}px`);
+      document.documentElement.style.setProperty('--mouse-y', `${e.clientY}px`);
+    };
+    
+    window.addEventListener('mousemove', handleMouseMove);
+    return () => window.removeEventListener('mousemove', handleMouseMove);
+  }, []);
+
   return (
     <div className="app-wrapper">
+      <div className="spotlight"></div>
+      <div className="bg-blobs">
+        <div className="blob blob-1"></div>
+        <div className="blob blob-2"></div>
+      </div>
       <Navbar />
       <main style={{ paddingTop: '80px' }}>
         <Hero />

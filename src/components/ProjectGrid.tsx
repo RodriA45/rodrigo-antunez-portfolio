@@ -10,8 +10,20 @@ export function ProjectGrid() {
   const [filter, setFilter] = useState<string>('All');
 
   const categories = ['All', 'Frontend', 'Backend', 'Full Stack', 'Data & Scripts'];
-
   const filteredProjects = projects.filter(p => filter === 'All' || p.category === filter);
+
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    show: {
+      opacity: 1,
+      transition: { staggerChildren: 0.1 }
+    }
+  };
+
+  const itemVariants = {
+    hidden: { opacity: 0, y: 30 },
+    show: { opacity: 1, y: 0, transition: { type: 'spring', stiffness: 300, damping: 24 } }
+  };
 
   return (
     <section className="projects-section" id="projects">
@@ -26,20 +38,47 @@ export function ProjectGrid() {
           <p className="section-subtitle">{t('projects.featured_subtitle')}</p>
         </motion.div>
         
-        <div className="filters-container">
+        <div className="filters-container glass-panel">
           {categories.map(cat => (
             <button
               key={cat}
               className={`filter-btn ${filter === cat ? 'active' : ''}`}
               onClick={() => setFilter(cat)}
+              style={{ position: 'relative', background: 'transparent', border: 'none', color: filter === cat ? '#fff' : 'var(--text-secondary)' }}
             >
-              {cat === 'All' ? t('projects.filters.all', 'Todos') : cat}
+              {filter === cat && (
+                <motion.div
+                  layoutId="active-filter"
+                  className="filter-active-bg"
+                  style={{
+                    position: 'absolute',
+                    top: 0,
+                    left: 0,
+                    right: 0,
+                    bottom: 0,
+                    background: 'var(--accent-primary)',
+                    borderRadius: '100px',
+                    zIndex: 0
+                  }}
+                  transition={{ type: 'spring', stiffness: 300, damping: 30 }}
+                />
+              )}
+              <span style={{ position: 'relative', zIndex: 1 }}>
+                {cat === 'All' ? t('projects.filters.all', 'Todos') : cat}
+              </span>
             </button>
           ))}
         </div>
 
-        <motion.div layout className="project-grid">
-          <AnimatePresence>
+        <motion.div 
+          layout 
+          className="project-grid"
+          variants={containerVariants}
+          initial="hidden"
+          animate="show"
+          key={filter} /* Force re-render animation when filter changes */
+        >
+          <AnimatePresence mode="popLayout">
             {filteredProjects.length > 0 ? (
               filteredProjects.map((project, index) => {
                 const isHero = index === 0 && filter === 'All' && project.featured;
@@ -47,11 +86,8 @@ export function ProjectGrid() {
                   <motion.div
                     key={project.id}
                     layout
+                    variants={itemVariants}
                     className={isHero ? 'hero-wrapper' : ''}
-                    initial={{ opacity: 0, scale: 0.9 }}
-                    animate={{ opacity: 1, scale: 1 }}
-                    exit={{ opacity: 0, scale: 0.9 }}
-                    transition={{ duration: 0.3 }}
                   >
                     <ProjectCard project={project} isHero={isHero} />
                   </motion.div>

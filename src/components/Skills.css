@@ -9,8 +9,24 @@
 
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: minmax(220px, auto);
   gap: var(--spacing-lg);
+}
+
+.skill-category-card:nth-child(1) {
+  grid-column: span 2;
+  grid-row: span 1;
+}
+
+.skill-category-card:nth-child(2) {
+  grid-column: span 1;
+  grid-row: span 2;
+}
+
+.skill-category-card:nth-child(3) {
+  grid-column: span 2;
+  grid-row: span 1;
 }
 
 .skill-category-card {
@@ -62,7 +78,17 @@
   color: var(--text-primary);
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
+  .skills-grid {
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+  }
+  .skill-category-card:nth-child(1),
+  .skill-category-card:nth-child(2),
+  .skill-category-card:nth-child(3) {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
   .skill-items {
     grid-template-columns: 1fr;
   }
