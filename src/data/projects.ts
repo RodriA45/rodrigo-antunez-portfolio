@@ -1,3 +1,15 @@
+import imgEstelar1 from '../assets/images/estelar-1.png';
+import imgEstelar2 from '../assets/images/estelar-2.png';
+import imgEstelar3 from '../assets/images/estelar-3.png';
+import imgEstelar4 from '../assets/images/estelar-4.png';
+import imgEstelar5 from '../assets/images/estelar-5.png';
+import imgEstelar6 from '../assets/images/estelar-6.png';
+import imgEstelar7 from '../assets/images/estelar-7.png';
+import imgEstelar8 from '../assets/images/estelar-8.png';
+import imgEstelar9 from '../assets/images/estelar-9.png';
+import imgEstelar10 from '../assets/images/estelar-10.png';
+import imgEstelar11 from '../assets/images/estelar-11.png';
+import imgEstelar12 from '../assets/images/estelar-12.png';
 import imgProfesor from '../assets/images/profesor-interactivo.webp';
 import imgFinTrack from '../assets/images/fin-track.webp';
 import imgJarvis from '../assets/images/jarvis.webp';
@@ -49,6 +61,23 @@ export interface Project {
 }
 
 export const projects: Project[] = [
+  {
+    id: 'estelar-3d',
+    title: 'Estelar - Exploración Cósmica',
+    description: 'Experiencia inmersiva 3D en el navegador que permite explorar nuestro sistema solar y exoplanetas cinematográficos (como los de Interstellar). Incluye un tour espacial guiado, texturas de alta resolución, controles orbitales interactivos y efectos de iluminación astronómica en tiempo real.',
+    descriptionEn: 'Immersive 3D browser experience to explore our solar system and cinematic exoplanets. Includes a guided space tour, high-resolution textures, interactive orbital controls, and real-time realistic astronomical lighting effects.',
+    technologies: ['React', 'Three.js', 'WebGL', 'Framer Motion'],
+    category: 'Frontend',
+    demoUrl: 'https://estelar-3-d.vercel.app/',
+    githubUrl: 'https://github.com/RodriA45/Estelar-3D',
+    imageUrl: imgEstelar1,
+    imageUrls: [
+      imgEstelar1, imgEstelar2, imgEstelar3, imgEstelar4, 
+      imgEstelar5, imgEstelar6, imgEstelar7, imgEstelar8, 
+      imgEstelar9, imgEstelar10, imgEstelar11, imgEstelar12
+    ],
+    featured: true
+  },
   {
     id: 'rutear-simulador',
     title: 'Rutear - Simulador de Viajes Inteligente',
