@@ -39,6 +39,13 @@ import imgRutear6 from '../assets/images/rutear-6.webp';
 import imgRutear7 from '../assets/images/rutear-7.webp';
 import imgPendriMP3 from '../assets/images/pendrimp3.png';
 
+import imgDragonBall1 from '../assets/images/Dragon-ball-web-1.png';
+import imgDragonBall2 from '../assets/images/Dragon-ball-web-2.png';
+import imgDragonBall3 from '../assets/images/Dragon-ball-web-3.png';
+import imgDragonBall4 from '../assets/images/Dragon-ball-web-4.png';
+import imgDragonBall5 from '../assets/images/Dragon-ball-web-5.png';
+import imgDragonBall6 from '../assets/images/Dragon-ball-web-6.png';
+
 export interface Project {
   id: string;
   title: string;
@@ -61,6 +68,21 @@ export interface Project {
 }
 
 export const projects: Project[] = [
+  {
+    id: 'dragonball-web-experience',
+    title: 'SaiyanVerse - DBZ Web Experience',
+    description: 'Experiencia inmersiva web basada en el universo de Dragon Ball. Destaca por su diseño oscuro premium (Dark Mode UI), animaciones avanzadas de scroll, cursores personalizados e integración de lectura de manga.',
+    descriptionEn: 'Immersive web experience based on the Dragon Ball universe. Stands out for its premium dark design (Dark Mode UI), advanced scroll animations, custom cursors, and integrated manga reading.',
+    technologies: ['HTML5', 'CSS3', 'Vanilla JS', 'UI/UX'],
+    category: 'Frontend',
+    demoUrl: 'https://rodria45.github.io/dragonball-web-experience/',
+    githubUrl: 'https://github.com/RodriA45/dragonball-web-experience',
+    imageUrl: imgDragonBall1,
+    imageUrls: [
+      imgDragonBall1, imgDragonBall2, imgDragonBall3, imgDragonBall4, imgDragonBall5, imgDragonBall6
+    ],
+    featured: true
+  },
   {
     id: 'estelar-3d',
     title: 'Estelar - Exploración Cósmica',
