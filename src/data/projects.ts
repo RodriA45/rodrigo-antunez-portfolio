@@ -46,6 +46,9 @@ import imgDragonBall4 from '../assets/images/Dragon-ball-web-4.png';
 import imgDragonBall5 from '../assets/images/Dragon-ball-web-5.png';
 import imgDragonBall6 from '../assets/images/Dragon-ball-web-6.png';
 
+import imgURLMiner1 from '../assets/images/url-miner-1.png';
+import imgURLMiner2 from '../assets/images/url-miner-2.png';
+
 export interface Project {
   id: string;
   title: string;
@@ -68,6 +71,21 @@ export interface Project {
 }
 
 export const projects: Project[] = [
+  {
+    id: 'url-miner-extractor',
+    title: 'URL Miner - Smart Extractor',
+    description: 'Herramienta web avanzada para extraer, filtrar y formatear URLs de forma masiva directamente desde cualquier texto plano. Diseño centrado en la privacidad (procesamiento 100% en el cliente) y optimizado para máxima velocidad y productividad.',
+    descriptionEn: 'Advanced web utility for bulk extracting, filtering, and formatting URLs directly from raw text. Privacy-first design (100% client-side processing) and optimized for maximum speed and productivity.',
+    technologies: ['React', 'CSS', 'JavaScript'],
+    category: 'Frontend',
+    demoUrl: 'https://url-miner.vercel.app/',
+    githubUrl: 'https://github.com/RodriA45/URL-Miner',
+    imageUrl: imgURLMiner1,
+    imageUrls: [
+      imgURLMiner1, imgURLMiner2
+    ],
+    featured: true
+  },
   {
     id: 'dragonball-web-experience',
     title: 'SaiyanVerse - DBZ Web Experience',
