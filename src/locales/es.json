@@ -75,24 +75,28 @@
   },
   "skills": {
     "title": "Habilidades Técnicas",
-    "subtitle": "Tecnologías con las que trabajo en el día a día."
+    "subtitle": "Tecnologías y herramientas que domino y aplico en proyectos reales.",
+    "frontend": "Frontend & UI",
+    "backend": "Backend & Bases de Datos",
+    "realtime": "Tiempo Real, 3D & Multimedia",
+    "tools": "Hardware, Desktop & Herramientas"
   },
   "timeline": {
     "title": "Mi Trayectoria",
     "item1": {
       "year": "2025",
-      "title": "Inicios & Academia",
-      "desc": "Comienzo de mis estudios en la UTN (Tecnicatura Universitaria en Programación) y primeros pasos firmes en el mundo del desarrollo web."
+      "title": "Inicios & Formación Académica",
+      "desc": "Comienzo de mis estudios en la UTN (Tecnicatura Universitaria en Programación) y primeros desarrollos de software y aplicaciones web profundas."
     },
     "item2": {
       "year": "Principios de 2026",
-      "title": "Primer Sistema en Producción",
-      "desc": "Desarrollo y venta exitosa de la plataforma 'Monitoreo 360 Seguridad', marcando mi inicio oficial como desarrollador Freelance."
+      "title": "Primeros Sistemas en Producción Real",
+      "desc": "Desarrollo y despliegue exitoso para clientes comerciales: Sistema de Turnos (Monitoreo 360), Hogar Mi Casita (PWA en producción) y gestión con SQLite."
     },
     "item3": {
       "year": "Fines 2026 / 2027",
-      "title": "Futuro Graduado & Full Stack",
-      "desc": "Próximo a recibir mi título en la UTN. Desarrollando soluciones completas, escalables y premium como Estelar 3D."
+      "title": "Culminación de Carrera & UniGames",
+      "desc": "Culminando mi titulación en la UTN con la presentación de UniGames (plataforma interactiva con motor 2D propio en Canvas) y consolidándome como Desarrollador Full Stack."
     }
   }
 }

@@ -75,24 +75,28 @@
   },
   "skills": {
     "title": "Technical Skills",
-    "subtitle": "Technologies I work with on a daily basis."
+    "subtitle": "Technologies and tools I master and apply across real-world projects.",
+    "frontend": "Frontend & UI",
+    "backend": "Backend & Databases",
+    "realtime": "Real-Time, 3D & Multimedia",
+    "tools": "Hardware, Desktop & Tools"
   },
   "timeline": {
     "title": "My Journey",
     "item1": {
       "year": "2025",
-      "title": "Beginnings & Academics",
-      "desc": "Started my Technical Degree in Programming at UTN and took my first solid steps in the web development world."
+      "title": "Beginnings & Academic Training",
+      "desc": "Started my degree at UTN (Associate Degree in Programming) and took initial deep dives into web development and software architecture."
     },
     "item2": {
       "year": "Early 2026",
-      "title": "First Production System",
-      "desc": "Successfully developed and sold the 'Monitoreo 360 Seguridad' platform, marking my official start as a Freelance developer."
+      "title": "First Systems in Real Production",
+      "desc": "Successful development and deployment for commercial clients: Appointment System (Monitoreo 360), Hogar Mi Casita (live PWA), and SQLite desktop management."
     },
     "item3": {
       "year": "Late 2026 / 2027",
-      "title": "Future Graduate & Full Stack",
-      "desc": "About to receive my degree at UTN. Developing complete, scalable, and premium solutions like Estelar 3D."
+      "title": "Degree Completion & UniGames",
+      "desc": "Culminating my degree at UTN with the release of UniGames (interactive platform with custom 2D Canvas engine) and consolidating as a Full Stack Developer."
     }
   }
 }

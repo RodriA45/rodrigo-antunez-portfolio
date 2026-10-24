@@ -31,7 +31,7 @@ export function AboutMe() {
               <p className="stat-label">{t('about.stat2_label')}</p>
             </div>
             <div className="stat-item">
-              <h3 className="stat-number">+5</h3>
+              <h3 className="stat-number">+15</h3>
               <p className="stat-label">{t('about.stat3_label')}</p>
             </div>
             <div className="stat-item">
