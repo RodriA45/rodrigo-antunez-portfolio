@@ -48,6 +48,35 @@ import imgDragonBall6 from '../assets/images/Dragon-ball-web-6.png';
 
 import imgURLMiner1 from '../assets/images/url-miner-1.png';
 import imgURLMiner2 from '../assets/images/url-miner-2.png';
+import imgURLMiner3 from '../assets/images/url-miner-3.png';
+import imgURLMiner4 from '../assets/images/url-miner-4.png';
+import imgURLMiner5 from '../assets/images/url-miner-5.png';
+
+import imgGruaRobotica1 from '../assets/images/grua-robotica-1.png';
+import imgGruaRobotica2 from '../assets/images/grua-robotica-2.png';
+import imgGruaRobotica3 from '../assets/images/grua-robotica-3.jpg';
+
+import imgHogarMiCasita1 from '../assets/images/hogar-mi-casita-1.png';
+import imgHogarMiCasita2 from '../assets/images/hogar-mi-casita-2.png';
+
+
+import imgCastWeb1 from '../assets/images/castweb-1.png';
+import imgCastWeb2 from '../assets/images/castweb-2.png';
+
+import imgSIGE1 from '../assets/images/sige-1.png';
+import imgSIGE2 from '../assets/images/sige-2.png';
+import imgSIGE3 from '../assets/images/sige-3.png';
+import imgSIGE4 from '../assets/images/sige-4.png';
+
+import imgTallerMotos1 from '../assets/images/taller-motos-1.png';
+import imgTallerMotos2 from '../assets/images/taller-motos-2.png';
+import imgTallerMotos3 from '../assets/images/taller-motos-3.png';
+import imgTallerMotos4 from '../assets/images/taller-motos-4.png';
+
+import imgReflex1 from '../assets/images/reflex-trackmanager-1.png';
+
+import imgTurnoNoche1 from '../assets/images/turno-noche-1.png';
+import imgTurnoNoche2 from '../assets/images/turno-noche-2.png';
 
 export interface Project {
   id: string;
@@ -73,18 +102,115 @@ export interface Project {
 export const projects: Project[] = [
   {
     id: 'url-miner-extractor',
-    title: 'URL Miner - Smart Extractor',
-    description: 'Herramienta web avanzada para extraer, filtrar y formatear URLs de forma masiva directamente desde cualquier texto plano. Diseño centrado en la privacidad (procesamiento 100% en el cliente) y optimizado para máxima velocidad y productividad.',
-    descriptionEn: 'Advanced web utility for bulk extracting, filtering, and formatting URLs directly from raw text. Privacy-first design (100% client-side processing) and optimized for maximum speed and productivity.',
-    technologies: ['React', 'CSS', 'JavaScript'],
+    title: 'URL Miner - Smart Extractor & Live Text Bridge',
+    description: 'Suite web avanzada de extracción masiva de URLs y puente de texto en tiempo real (v3.2.0). Incluye motor de minado con regex de alta precisión, filtros por dominio o extensión, formateador en lote (HTML/Markdown), puente "Live Drop" efímero entre dispositivos mediante salas o QR sin registro, limpieza de analítica (UTM, fbclid), historial local y temas dinámicos Neo-Brutalist y Matrix.',
+    descriptionEn: 'Advanced web suite for bulk URL extraction and real-time live text bridging (v3.2.0). Features a high-precision regex mining engine, domain/extension filtering, batch link formatter (HTML/Markdown), ephemeral "Live Drop" bridge between devices via room codes or QR without accounts, tracking parameter sanitizer (UTM, fbclid), local history, and dynamic Neo-Brutalist & Matrix themes.',
+    technologies: ['React', 'TypeScript', 'Live Drop P2P', 'Tailwind / Neo-Brutalist', 'Regex Engine', 'Privacy-First'],
     category: 'Frontend',
     demoUrl: 'https://url-miner.vercel.app/',
     githubUrl: 'https://github.com/RodriA45/URL-Miner',
     imageUrl: imgURLMiner1,
     imageUrls: [
-      imgURLMiner1, imgURLMiner2
+      imgURLMiner1, imgURLMiner2, imgURLMiner3, imgURLMiner4, imgURLMiner5
     ],
     featured: true
+  },
+  {
+    id: 'hogar-mi-casita',
+    title: 'Hogar Mi Casita - Cuidado Gerontológico',
+    description: 'Plataforma web desplegada en producción para un cliente real de salud y cuidado del adulto mayor, con sedes en Buenos Aires y Tucumán. Construida con React, arquitectura PWA instalable, optimización SEO con metadatos estructurados (Schema.org JSON-LD MedicalOrganization), atención médica 24/7 y contacto directo por WhatsApp.',
+    descriptionEn: 'Live production web platform for a healthcare and elder care client with facilities in Buenos Aires and Tucumán. Built with React, installable PWA architecture, advanced SEO with structured schema (Schema.org JSON-LD MedicalOrganization), 24/7 care showcase, and instant WhatsApp integration.',
+    technologies: ['React', 'TypeScript', 'PWA', 'SEO & Schema.org', 'Vite', 'Producción Real'],
+    category: 'Frontend',
+    demoUrl: 'https://hogar-mi-casita.onrender.com/',
+    imageUrl: imgHogarMiCasita1,
+    imageUrls: [imgHogarMiCasita1, imgHogarMiCasita2],
+    featured: true
+  },
+
+  {
+    id: 'grua-robotica-4dof',
+    title: 'Grúa Robótica 4-DOF (Control Serial)',
+    description: 'Sistema integral de control en tiempo real para brazo robótico articulado de 4 grados de libertad (4-DOF). Desarrollado con interfaz gráfica de escritorio en Python (Pygame), comunicación serial continua y microcontrolador Arduino UNO con interpolación cinemática suave para proteger los servomotores SG90. Soporta mandos USB (PlayStation, Xbox) con filtro de zona muerta y modo teclado automático.',
+    descriptionEn: 'Comprehensive real-time control system for a 4-DOF articulated robotic arm. Engineered with a Python (Pygame) desktop GUI, low-latency serial communication, and an Arduino UNO microcontroller with smooth kinematic interpolation to protect SG90 servo motors. Features USB gamepad support (PlayStation, Xbox) with deadzone filtering and automatic keyboard fallback.',
+    technologies: ['Python', 'Arduino UNO (C++)', 'Pygame GUI', 'Protocolo Serial', 'Robótica & Hardware'],
+    category: 'Data & Scripts',
+    githubUrl: 'https://github.com/RodriA45/Grua-Robotica-4dof',
+    imageUrl: imgGruaRobotica1,
+    imageUrls: [imgGruaRobotica1, imgGruaRobotica2, imgGruaRobotica3],
+    featured: true
+  },
+  {
+    id: 'castweb-p2p',
+    title: 'CastWeb - Screen Sharing P2P',
+    description: 'Herramienta web moderna para la transmisión y recepción de pantalla y audio en tiempo real con latencia ultrabaja. Basada en tecnología WebRTC Peer-to-Peer, permite vincular dos dispositivos al instante mediante un código seguro de 4 dígitos sin configuraciones complejas ni instalaciones de software.',
+    descriptionEn: 'Modern web tool for sharing and receiving screen and audio in real time with ultra-low latency. Powered by WebRTC Peer-to-Peer technology, it enables instant pairing between devices using a secure 4-digit code without complicated setups or software installations.',
+    technologies: ['WebRTC', 'JavaScript', 'CSS3 Moderno', 'P2P Streaming', 'Real-Time'],
+    category: 'Frontend',
+    githubUrl: 'https://github.com/RodriA45/castweb',
+    demoUrl: 'https://castweb-wheat.vercel.app/',
+    imageUrl: imgCastWeb1,
+    imageUrls: [imgCastWeb1, imgCastWeb2],
+    featured: true
+  },
+  {
+    id: 'sige-gestion-escolar',
+    title: 'SIGE - Sistema Integral de Gestión Escolar',
+    description: 'Software de escritorio corporativo (.exe) para la gestión educativa y seguimiento de alumnos. Incluye módulo de auditoría de actividad para trazabilidad de operaciones, alertas de inasistencias y promedios por trimestre, exportación masiva de planillas a Excel, sistema de backups integrales en ZIP y tema visual claro/oscuro.',
+    descriptionEn: 'Corporate desktop software (.exe) for educational administration and student academic monitoring. Includes activity audit logs for operation traceability, attendance and grade threshold alerts by trimester, bulk Excel exports, automated ZIP backups, and light/dark theme switching.',
+    technologies: ['Desktop App (.exe)', 'Bases de Datos', 'Auditoría', 'Excel Exports', 'Seguridad & Backup'],
+    category: 'Data & Scripts',
+    imageUrl: imgSIGE2,
+    imageUrls: [imgSIGE2, imgSIGE1, imgSIGE3, imgSIGE4],
+    featured: true,
+    customCTA: {
+      text: '¿Quieres un sistema de gestión escolar para tu institución o colegio? Háblame',
+      textEn: 'Do you want a school management system for your institution or school? Contact me.',
+      url: 'https://wa.me/5493865227220',
+      type: 'whatsapp'
+    }
+  },
+  {
+    id: 'el-turno-noche-hospital',
+    title: 'El Turno Noche: Hospital San Anselmo (3D)',
+    description: 'Videojuego de terror psicológico episódico en 3D que corre 100% nativo en el navegador mediante Three.js y Vite. Inspirado en Fears to Fathom y Resident Evil, incluye 5 capítulos de tensión narrativa, cinemáticas analógicas VHS (1984), mecánicas de sigilo en casilleros, linterna física con cookies ópticos, audio espacial sintetizado proceduralmente (Web Audio API) y controles táctiles para móviles.',
+    descriptionEn: 'Episodic 3D psychological horror web game running 100% natively in the browser using Three.js and Vite. Inspired by Fears to Fathom and Resident Evil, it features 5 chapters, retro VHS cutscenes (1984), locker stealth mechanics, physics-based flashlight projection, procedural 3D spatial audio (Web Audio API), and mobile touch controls.',
+    technologies: ['Three.js', 'WebGL', 'Vite', 'Web Audio API', 'Procedural PBR', 'JavaScript'],
+    category: 'Frontend',
+    githubUrl: 'https://github.com/RodriA45/el-turno-noche-hospital',
+    demoUrl: 'https://el-turno-noche-hospital.vercel.app/',
+    imageUrl: imgTurnoNoche1,
+    imageUrls: [imgTurnoNoche1, imgTurnoNoche2],
+    featured: true
+  },
+  {
+    id: 'taller-motos-antunez',
+    title: 'Taller Antúnez - CRM & Gestión SQLite v7.0',
+    description: 'Sistema integral de gestión de taller mecánico y órdenes de servicio, migrado y optimizado a SQLite en su versión 7.0. Administra clientes frecuentes, ingresos de vehículos con fotografías adjuntas, facturación de tickets PDF, avisos automatizados a clientes vía WhatsApp y resumen económico con gráficos de ingresos de los últimos 6 meses.',
+    descriptionEn: 'Comprehensive workshop management and service order system, migrated and optimized with SQLite in version 7.0. Manages frequent clients, vehicle intake with photo attachments, PDF ticket billing, automated WhatsApp customer notifications, and monthly economic summaries with historic income charts.',
+    technologies: ['SQLite', 'Desktop App', 'WhatsApp API', 'Reportes PDF', 'Métricas & Gráficos'],
+    category: 'Data & Scripts',
+    imageUrl: imgTallerMotos1,
+    imageUrls: [imgTallerMotos1, imgTallerMotos2, imgTallerMotos3, imgTallerMotos4],
+    featured: false,
+    customCTA: {
+      text: '¿Quieres un sistema de gestión para tu taller mecánico o negocio? Háblame',
+      textEn: 'Do you want a management system for your workshop or business? Contact me.',
+      url: 'https://wa.me/5493865227220',
+      type: 'whatsapp'
+    }
+  },
+  {
+    id: 'reflex-trackmanager',
+    title: 'Reflex TrackManager 2026 (.NET 8 & ImGui)',
+    description: 'Modernización e ingeniería inversa de la herramienta comunitaria de gestión de pistas para MX vs ATV Reflex. Migración del backend a .NET 8, reemplazo de llamadas síncronas por HttpClient asíncrono para evitar bloqueos de interfaz, eliminación de endpoints AWS caídos, corrección del parser de Steam y desarrollo de overlay in-game en C++ con Dear ImGui y MinHook.',
+    descriptionEn: 'Modernization and reverse engineering of the community track management utility for MX vs ATV Reflex. Migrated backend to .NET 8, replaced legacy synchronous calls with asynchronous HttpClient, removed defunct AWS cloud servers causing startup crashes, fixed Steam library parser, and implemented a custom C++ in-game overlay via Dear ImGui and MinHook.',
+    technologies: ['C#', '.NET 8', 'C++', 'Dear ImGui', 'MinHook', 'Reverse Engineering'],
+    category: 'Data & Scripts',
+    githubUrl: 'https://github.com/RodriA45/Reflex-TrackManager-2026',
+    imageUrl: imgReflex1,
+    imageUrls: [imgReflex1],
+    featured: false
   },
   {
     id: 'dragonball-web-experience',

@@ -20,16 +20,19 @@ export function ProjectCard({ project, isHero }: ProjectCardProps) {
 
   const nextImage = (e: React.MouseEvent) => {
     e.preventDefault();
+    e.stopPropagation();
     setCurrentImageIndex((prev) => (prev + 1) % images.length);
   };
 
   const prevImage = (e: React.MouseEvent) => {
     e.preventDefault();
+    e.stopPropagation();
     setCurrentImageIndex((prev) => (prev - 1 + images.length) % images.length);
   };
 
   const setIndex = (e: React.MouseEvent, idx: number) => {
     e.preventDefault();
+    e.stopPropagation();
     setCurrentImageIndex(idx);
   };
 
@@ -97,7 +100,7 @@ export function ProjectCard({ project, isHero }: ProjectCardProps) {
         </div>
         {project.customCTA && (
           <div className="custom-cta-box" style={{ 
-            marginTop: '1.5rem', 
+            marginTop: 'auto', 
             padding: '1rem', 
             backgroundColor: 'rgba(37, 211, 102, 0.05)', 
             border: '1px solid rgba(37, 211, 102, 0.3)', 
@@ -142,20 +145,22 @@ export function ProjectCard({ project, isHero }: ProjectCardProps) {
         )}
       </div>
       
-      <div className="project-links">
-        {project.githubUrl && (
-          <a href={project.githubUrl} target="_blank" rel="noopener noreferrer" className="project-link" aria-label={t('projects.code', 'Código')}>
-            <FaGithub size={20} />
-            <span>{t('projects.code', 'Código')}</span>
-          </a>
-        )}
-        {project.demoUrl && (
-          <a href={project.demoUrl} target="_blank" rel="noopener noreferrer" className="project-link demo-link" aria-label={t('projects.demo', 'Demo')}>
-            <FaExternalLinkAlt size={20} />
-            <span>{t('projects.demo', 'Demo')}</span>
-          </a>
-        )}
-      </div>
+      {(project.githubUrl || project.demoUrl) && (
+        <div className="project-links">
+          {project.githubUrl && (
+            <a href={project.githubUrl} target="_blank" rel="noopener noreferrer" className="project-link" aria-label={t('projects.code', 'Código')}>
+              <FaGithub size={20} />
+              <span>{t('projects.code', 'Código')}</span>
+            </a>
+          )}
+          {project.demoUrl && (
+            <a href={project.demoUrl} target="_blank" rel="noopener noreferrer" className="project-link demo-link" aria-label={t('projects.demo', 'Demo')}>
+              <FaExternalLinkAlt size={20} />
+              <span>{t('projects.demo', 'Demo')}</span>
+            </a>
+          )}
+        </div>
+      )}
     </div>
   );
 }

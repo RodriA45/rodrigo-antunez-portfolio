@@ -37,12 +37,16 @@
     "code": "Código",
     "demo": "Demo",
     "filters": {
+      "featured": "Destacados",
       "all": "Todos",
       "frontend": "Frontend",
       "backend": "Backend",
       "fullstack": "Full Stack",
       "data": "Data & Scripts"
     },
+    "see_more_title": "¿Quieres ver más proyectos?",
+    "see_more_desc": "Ver todos los desarrollos y sistemas",
+    "show_less": "Mostrar menos",
     "empty_title": "Próximamente más proyectos",
     "empty_desc": "Aún no he subido proyectos exclusivos para esta categoría, pero estoy trabajando en cosas nuevas.",
     "mockup_badge": "Maqueta",

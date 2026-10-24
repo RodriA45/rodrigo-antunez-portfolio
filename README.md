@@ -1,40 +1,50 @@
 # 💻 Rodrigo Antúnez | Portfolio Web
 
-🔗 **Visitar sitio en vivo:** [rodria45.github.io/rodrigo-antunez-portfolio](https://rodria45.github.io/rodrigo-antunez-portfolio/)
-
-![Vista Previa del Portafolio](./preview.png)
+🔗 **Sitio en vivo:** [rodria45.github.io/rodrigo-antunez-portfolio](https://rodria45.github.io/rodrigo-antunez-portfolio/)
 
 ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 ![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
 ![Vite](https://img.shields.io/badge/Vite-B73BFE?style=for-the-badge&logo=vite&logoColor=FFD62E)
+![Three.js](https://img.shields.io/badge/Three.js-black?style=for-the-badge&logo=three.js&logoColor=white)
+![WebRTC](https://img.shields.io/badge/WebRTC-333333?style=for-the-badge&logo=webrtc&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 
-> Portafolio interactivo personal desarrollado para exhibir mi experiencia, habilidades y proyectos destacados como Desarrollador Full Stack.
+> Portafolio interactivo de alto impacto diseñado para exhibir mi experiencia, sistemas en producción, proyectos de hardware/robótica, aplicaciones web en tiempo real y videojuegos 3D como Desarrollador Full Stack.
 
 ---
 
-## ✨ Características Principales
+## ✨ Características y Secciones Principales
 
-- **Diseño Moderno:** Estética oscura profesional (*Dark Mode*) con toques sutiles de *glassmorphism* y micro-interacciones.
-- **Soporte Bilingüe Nativo:** Integración completa de i18next para traducción dinámica entre Inglés y Español en tiempo real.
-- **Arquitectura Escalable:** Construido con componentes funcionales de React para máxima reutilización y código limpio.
-- **Tipado Fuerte:** Desarrollado íntegramente en TypeScript para garantizar estabilidad y prever errores en tiempo de desarrollo.
-- **Privacidad Estratégica:** Los proyectos se cargan desde un archivo local, lo que permite mantener repositorios de código privados o corporativos en GitHub, sin perder la capacidad de exhibir demos y descripciones en la web.
-- **Mobile First 100%:** Adaptabilidad perfecta en dispositivos móviles, tablets y escritorio, incluyendo un menú de navegación optimizado y animaciones fluidas con Framer Motion.
-- **Contacto Directo (No-Backend):** Formularios que integran comunicación directa a WhatsApp y Email pre-completados, eliminando la dependencia de servidores intermedios.
+- **Proyecto Final de Graduación (Capstone Project - UniGames):** Sección exclusiva e independiente dedicada al proyecto integrador universitario con motor 2D en Canvas, autenticación con Supabase, PostgreSQL y enlace para jugar en vivo.
+- **Showcase de Proyectos con Formato Hero + Grid:**
+  - **Proyecto Hero Destacado:** El proyecto principal se presenta en un banner panorámico de 500px con tarjeta flotante en *glassmorphism* y controles integrados.
+  - **Grid de Proyectos Alineado:** Tarjetas estandarizadas con carruseles de imágenes navegables, modal de inspección en pantalla completa (*Lightbox*) y alturas perfectamente balanceadas.
+  - **Filtro Inteligente y Botón "¿Quieres ver más proyectos?":** Carga inicial optimizada de 4 proyectos destacados con expansión fluida hacia la totalidad de desarrollos y botón para volver a destacados.
+- **Sistemas en Producción y Casos Reales:**
+  - **URL Miner:** Suite de extracción y filtrado masivo de URLs con puente *Live Drop* efímero entre dispositivos.
+  - **Hogar Mi Casita:** Plataforma en producción para cliente real de salud gerontológica (PWA instalable, Schema.org SEO, WhatsApp).
+  - **Grúa Robótica 4-DOF:** Control en tiempo real con Arduino UNO, comunicación serial, GUI en Python (Pygame) y soporte para joystick.
+  - **CastWeb:** Transmisión P2P de pantalla y audio en tiempo real con WebRTC sin instalación de software.
+  - **El Turno Noche: Hospital San Anselmo:** Videojuego 3D en el navegador con Three.js, shaders retro VHS y audio espacial procedural.
+  - **SIGE y Taller Antúnez:** Software de gestión con bases de datos, auditoría, exportaciones a Excel/PDF y botones de cotización directa por WhatsApp.
+- **Soporte Bilingüe Nativo (i18n):** Traducción instantánea entre Español e Inglés con persistencia de idioma.
+- **Estética Dark Mode & Glassmorphism:** Micro-interacciones fluidas impulsadas por Framer Motion, diseño responsivo para móviles, tablets y monitores ultrawide.
+- **Contacto Directo:** Enlaces rápidos a WhatsApp, email pre-completado y redes profesionales sin intermediarios.
 
-## 🛠️ Tecnologías Core
+---
 
-- **Frontend Framework:** React 18
-- **Build Tool:** Vite
-- **Lenguaje:** TypeScript
-- **Estilos:** CSS3 Vanilla (Implementación de UI con Variables CSS globales)
-- **Iconografía:** React Icons
-- **Despliegue e Integración Continua (CI/CD):** GitHub Actions / GitHub Pages
+## 🛠️ Stack Tecnológico
+
+- **Frontend:** React 18, TypeScript, Framer Motion, React Icons.
+- **Gráficos & Tiempo Real:** Three.js, WebGL, WebRTC (P2P Data & Media Streams), HTML5 Canvas.
+- **Estilos:** Vanilla CSS moderno con variables de diseño (Design Tokens), arquitectura modular sin frameworks pesados.
+- **Build Tool:** Vite 8.
+- **Internacionalización:** i18next & react-i18next.
+- **CI/CD & Hosting:** GitHub Actions & GitHub Pages.
+
+---
 
 ## 🚀 Despliegue Local (Getting Started)
-
-Instrucciones para levantar el entorno de desarrollo local:
 
 ### 1. Clonar el repositorio
 ```bash
@@ -42,29 +52,39 @@ git clone https://github.com/RodriA45/rodrigo-antunez-portfolio.git
 cd rodrigo-antunez-portfolio
 ```
 
-### 2. Modo Automático (Solo Windows)
-El proyecto incluye un script de inicialización. Haz doble clic en el archivo `start.bat`. Este ejecutable validará, instalará las dependencias necesarias de npm de manera automatizada e inicializará el servidor.
+### 2. Modo Automático (Windows)
+Haz doble clic en `start.bat`. El script verificará las dependencias, instalará los paquetes necesarios e iniciará el servidor de desarrollo local automáticamente.
 
-### 3. Modo Manual (Cualquier SO)
-Instala las dependencias:
+### 3. Modo Manual (Cualquier Sistema Operativo)
 ```bash
+# Instalar dependencias
 npm install
-```
 
-Inicia el servidor en modo desarrollo:
-```bash
+# Iniciar servidor de desarrollo
 npm run dev
+
+# Compilar para producción
+npm run build
 ```
-La aplicación estará disponible en `http://localhost:5173/`.
 
-## 📁 Gestión y Mantenimiento de Datos
-
-Toda la información exhibida en el portafolio (Descripciones, Stacks tecnológicos, Links a repositorios, Demos e Imágenes) se encuentra centralizada, evitando depender de APIs de terceros y asegurando tiempos de carga inmediatos.
-
-Ruta del esquema de datos: `src/data/projects.ts`
-
-Para integrar nuevos trabajos, basta con anexar un objeto tipado que cumpla con la interfaz `Project` exportada en dicho módulo.
+El servidor local se iniciará habitualmente en `http://localhost:5173/` o `http://localhost:5174/`.
 
 ---
-**© 2026 Rodrigo Antúnez.**
-Transformando ideas complejas en experiencias digitales de alta calidad.
+
+## 📁 Estructura del Proyecto
+
+```plaintext
+src/
+├── assets/images/       # Capturas reales en alta resolución de cada proyecto
+├── components/          # Componentes modulares (Hero, CapstoneProject, ProjectGrid, ProjectCard, etc.)
+├── data/
+│   └── projects.ts      # Esquema centralizado y tipado de proyectos
+├── locales/             # Diccionarios de traducción (es.json, en.json)
+├── App.tsx              # Componente principal con orquestación de secciones
+└── main.tsx             # Punto de entrada de la aplicación
+```
+
+---
+
+**© 2026 Rodrigo Antúnez.**  
+Desarrollador Full Stack | Transformando ideas en software real de alto impacto.

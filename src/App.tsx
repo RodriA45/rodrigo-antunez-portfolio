@@ -5,6 +5,7 @@ import { AboutMe } from './components/AboutMe';
 import { Services } from './components/Services';
 import { Skills } from './components/Skills';
 import { ProjectGrid } from './components/ProjectGrid';
+import { CapstoneProject } from './components/CapstoneProject';
 import { ContactCTA } from './components/ContactCTA';
 import { BackToTop } from './components/BackToTop';
 
@@ -33,6 +34,7 @@ function App() {
         <Services />
         <Skills />
         <ProjectGrid />
+        <CapstoneProject />
         <ContactCTA />
       </main>
       

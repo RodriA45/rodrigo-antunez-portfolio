@@ -38,9 +38,11 @@
 
 .project-content {
   padding: var(--spacing-lg);
-  padding-bottom: 0;
-  margin-bottom: var(--spacing-lg);
-  flex-grow: 1;
+  padding-bottom: var(--spacing-md);
+  margin-bottom: 0;
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
   min-width: 0;
 }
 
@@ -49,19 +51,33 @@
   font-weight: 600;
   margin-bottom: var(--spacing-sm);
   color: var(--text-primary);
+  line-height: 1.35;
+  min-height: 3.2rem;
+  display: flex;
+  align-items: flex-start;
 }
 
 .project-description {
   color: var(--text-secondary);
-  font-size: 0.95rem;
+  font-size: 0.93rem;
   margin-bottom: var(--spacing-md);
   line-height: 1.5;
+  flex: 1 1 auto;
+  min-height: 5.6rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .project-tech {
   display: flex;
   flex-wrap: wrap;
   gap: var(--spacing-sm);
+  margin-top: auto;
+  padding-top: var(--spacing-sm);
+  margin-bottom: var(--spacing-md);
 }
 
 .tech-badge {
@@ -81,21 +97,27 @@
   border-top: 1px solid var(--border-subtle);
   background-color: rgba(0, 0, 0, 0.2);
   flex-wrap: wrap;
+  margin-top: auto;
 }
 
 .project-image-container {
   width: 100%;
-  height: auto;
+  height: 220px;
+  min-height: 220px;
+  max-height: 220px;
+  aspect-ratio: 16 / 9;
   flex-shrink: 0;
   overflow: hidden;
   border-bottom: 1px solid var(--border-subtle);
   position: relative;
-  background-color: transparent;
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 .project-image {
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
   display: block;
   transition: transform var(--transition-normal);
 }

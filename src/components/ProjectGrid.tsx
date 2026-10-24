@@ -1,16 +1,29 @@
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { motion, AnimatePresence } from 'framer-motion';
+import { FaArrowRight, FaChevronUp } from 'react-icons/fa';
 import { projects } from '../data/projects';
 import { ProjectCard } from './ProjectCard';
 import './ProjectGrid.css';
 
 export function ProjectGrid() {
   const { t } = useTranslation();
-  const [filter, setFilter] = useState<string>('All');
+  const [filter, setFilter] = useState<string>('Featured');
 
-  const categories = ['All', 'Frontend', 'Backend', 'Full Stack', 'Data & Scripts'];
-  const filteredProjects = projects.filter(p => filter === 'All' || p.category === filter);
+  const categories = [
+    { id: 'Featured', labelKey: 'projects.filters.featured', fallback: 'Destacados' },
+    { id: 'All', labelKey: 'projects.filters.all', fallback: 'Todos' },
+    { id: 'Frontend', labelKey: 'projects.filters.frontend', fallback: 'Frontend' },
+    { id: 'Backend', labelKey: 'projects.filters.backend', fallback: 'Backend' },
+    { id: 'Full Stack', labelKey: 'projects.filters.fullstack', fallback: 'Full Stack' },
+    { id: 'Data & Scripts', labelKey: 'projects.filters.data', fallback: 'Data & Scripts' }
+  ];
+
+  const filteredProjects = filter === 'Featured'
+    ? projects.slice(0, 4)
+    : (filter === 'All'
+        ? projects
+        : projects.filter(p => p.category === filter));
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -41,12 +54,12 @@ export function ProjectGrid() {
         <div className="filters-container glass-panel">
           {categories.map(cat => (
             <button
-              key={cat}
-              className={`filter-btn ${filter === cat ? 'active' : ''}`}
-              onClick={() => setFilter(cat)}
-              style={{ position: 'relative', background: 'transparent', border: 'none', color: filter === cat ? '#fff' : 'var(--text-secondary)' }}
+              key={cat.id}
+              className={`filter-btn ${filter === cat.id ? 'active' : ''}`}
+              onClick={() => setFilter(cat.id)}
+              style={{ position: 'relative', background: 'transparent', border: 'none', color: filter === cat.id ? '#fff' : 'var(--text-secondary)' }}
             >
-              {filter === cat && (
+              {filter === cat.id && (
                 <motion.div
                   layoutId="active-filter"
                   className="filter-active-bg"
@@ -64,7 +77,7 @@ export function ProjectGrid() {
                 />
               )}
               <span style={{ position: 'relative', zIndex: 1 }}>
-                {cat === 'All' ? t('projects.filters.all', 'Todos') : cat}
+                {t(cat.labelKey, cat.fallback)}
               </span>
             </button>
           ))}
@@ -81,13 +94,13 @@ export function ProjectGrid() {
           <AnimatePresence mode="popLayout">
             {filteredProjects.length > 0 ? (
               filteredProjects.map((project, index) => {
-                const isHero = index === 0 && filter === 'All' && project.featured;
+                const isHero = index === 0 && (filter === 'Featured' || filter === 'All');
                 return (
                   <motion.div
                     key={project.id}
                     layout
                     variants={itemVariants}
-                    className={isHero ? 'hero-wrapper' : ''}
+                    className={isHero ? 'hero-wrapper' : 'project-card-wrapper'}
                   >
                     <ProjectCard project={project} isHero={isHero} />
                   </motion.div>
@@ -105,6 +118,54 @@ export function ProjectGrid() {
             )}
           </AnimatePresence>
         </motion.div>
+
+        {filter === 'Featured' && (
+          <motion.div 
+            className="see-more-wrapper"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.15 }}
+          >
+            <button 
+              className="see-more-card-btn"
+              onClick={() => {
+                setFilter('All');
+              }}
+              aria-label={t('projects.see_more_title', '¿Quieres ver más proyectos?')}
+            >
+              <div className="see-more-text">
+                <span className="see-more-title">{t('projects.see_more_title', '¿Quieres ver más proyectos?')}</span>
+                <span className="see-more-subtitle">{t('projects.see_more_desc', 'Ver todos los desarrollos y sistemas')}</span>
+              </div>
+              <div className="see-more-arrow-circle">
+                <FaArrowRight className="see-more-icon" />
+              </div>
+            </button>
+          </motion.div>
+        )}
+
+        {filter === 'All' && projects.length > 4 && (
+          <motion.div 
+            className="see-more-wrapper"
+            initial={{ opacity: 0, y: 15 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.3 }}
+          >
+            <button 
+              className="show-less-btn"
+              onClick={() => {
+                setFilter('Featured');
+                const projectsEl = document.getElementById('projects');
+                if (projectsEl) {
+                  projectsEl.scrollIntoView({ behavior: 'smooth' });
+                }
+              }}
+            >
+              <FaChevronUp size={12} />
+              <span>{t('projects.show_less', 'Mostrar menos (volver a destacados)')}</span>
+            </button>
+          </motion.div>
+        )}
       </div>
     </section>
   );
