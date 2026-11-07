@@ -63,12 +63,6 @@
   margin-bottom: var(--spacing-md);
   line-height: 1.5;
   flex: 1 1 auto;
-  min-height: 5.6rem;
-  display: -webkit-box;
-  -webkit-line-clamp: 6;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 
 .project-tech {
