@@ -162,8 +162,8 @@ export const projects: Project[] = [
   {
     id: 'latino-stream-scraper-api',
     title: 'LatinoStream - Scraper API & Reproductor Propio',
-    description: 'Arquitectura backend y suite de scraping distribuido en tiempo real para servidores de streaming (Películas, Series y Anime en audio Latino). Integra documentación interactiva OpenAPI 3.1 / Swagger, unificación y deduplicación multiserver de 9 proveedores simultáneos (SoloLatino, CineCalidad, PelisFlix, TioAnime, etc.), extracción directa de streams de video esquivando publicidad/popups invasivos, reverse proxy para streams HLS y reproductor nativo ad-free con selector de calidad y velocidad.',
-    descriptionEn: 'High-performance backend architecture and real-time distributed scraper suite for video streaming platforms (Movies, Series, and Anime with Latino audio). Features interactive OpenAPI 3.1 / Swagger docs, multi-server normalization across 9 concurrent providers (SoloLatino, CineCalidad, PelisFlix, TioAnime, etc.), direct video stream extraction bypassing invasive ads and popups, HLS reverse proxying, and a custom ad-free native video player with resolution and playback speed controls.',
+    description: 'Suite backend y motor de scraping distribuido en tiempo real para servidores de streaming (Películas, Series y Anime en audio Latino). Integra API REST con OpenAPI 3.1 / Swagger, unificación multiserver de 9 proveedores (SoloLatino, CineCalidad, PelisFlix, etc.), extracción directa de streams sin anuncios ni popups, reverse proxy HLS y reproductor propio.',
+    descriptionEn: 'Real-time distributed backend scraper suite for video streaming platforms (Movies, Series, and Anime with Latino audio). Features REST API with OpenAPI 3.1 / Swagger, 9-provider multi-server normalization (SoloLatino, CineCalidad, etc.), direct ad-free stream extraction, HLS stream proxy, and a custom native web player.',
     technologies: ['Backend API', 'Web Scraping', 'OpenAPI 3.1 (Swagger)', 'HLS Stream Proxy', 'Extracción de Streams', 'Reproductor Propio'],
     category: 'Backend',
     imageUrl: imgLatinoStream1,
