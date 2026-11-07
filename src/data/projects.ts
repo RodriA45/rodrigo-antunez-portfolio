@@ -78,6 +78,12 @@ import imgReflex1 from '../assets/images/reflex-trackmanager-1.png';
 import imgTurnoNoche1 from '../assets/images/turno-noche-1.png';
 import imgTurnoNoche2 from '../assets/images/turno-noche-2.png';
 
+import imgLatinoStream1 from '../assets/images/latino-stream-1.jpg';
+import imgLatinoStream2 from '../assets/images/latino-stream-2.jpg';
+import imgLatinoStream3 from '../assets/images/latino-stream-3.png';
+import imgLatinoStream4 from '../assets/images/latino-stream-4.jpg';
+import imgLatinoStream5 from '../assets/images/latino-stream-5.jpg';
+
 export interface Project {
   id: string;
   title: string;
@@ -152,6 +158,29 @@ export const projects: Project[] = [
     imageUrl: imgCastWeb1,
     imageUrls: [imgCastWeb1, imgCastWeb2],
     featured: true
+  },
+  {
+    id: 'latino-stream-scraper-api',
+    title: 'LatinoStream - Scraper API & Reproductor Propio',
+    description: 'Arquitectura backend y suite de scraping distribuido en tiempo real para servidores de streaming (Películas, Series y Anime en audio Latino). Integra documentación interactiva OpenAPI 3.1 / Swagger, unificación y deduplicación multiserver de 9 proveedores simultáneos (SoloLatino, CineCalidad, PelisFlix, TioAnime, etc.), extracción directa de streams de video esquivando publicidad/popups invasivos, reverse proxy para streams HLS y reproductor nativo ad-free con selector de calidad y velocidad.',
+    descriptionEn: 'High-performance backend architecture and real-time distributed scraper suite for video streaming platforms (Movies, Series, and Anime with Latino audio). Features interactive OpenAPI 3.1 / Swagger docs, multi-server normalization across 9 concurrent providers (SoloLatino, CineCalidad, PelisFlix, TioAnime, etc.), direct video stream extraction bypassing invasive ads and popups, HLS reverse proxying, and a custom ad-free native video player with resolution and playback speed controls.',
+    technologies: ['Backend API', 'Web Scraping', 'OpenAPI 3.1 (Swagger)', 'HLS Stream Proxy', 'Extracción de Streams', 'Reproductor Propio'],
+    category: 'Backend',
+    imageUrl: imgLatinoStream1,
+    imageUrls: [
+      imgLatinoStream1,
+      imgLatinoStream2,
+      imgLatinoStream3,
+      imgLatinoStream4,
+      imgLatinoStream5
+    ],
+    featured: true,
+    customCTA: {
+      text: '¿Necesitas una API de scraping, extracción de video o desarrollo backend a medida? Háblame',
+      textEn: 'Do you need a custom scraping API, video stream extraction, or tailored backend architecture? Contact me.',
+      url: 'https://wa.me/5493865227220?text=Hola%20Rodrigo,%20vi%20tu%20proyecto%20de%20API%20Scraper%20y%20reproductor%20y%20me%20interesa%20un%20desarrollo%20similar.',
+      type: 'whatsapp'
+    }
   },
   {
     id: 'sige-gestion-escolar',

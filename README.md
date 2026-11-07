@@ -21,6 +21,7 @@
   - **Grid de Proyectos Alineado:** Tarjetas estandarizadas con carruseles de imágenes navegables, modal de inspección en pantalla completa (*Lightbox*) y alturas perfectamente balanceadas.
   - **Filtro Inteligente y Botón "¿Quieres ver más proyectos?":** Carga inicial optimizada de 4 proyectos destacados con expansión fluida hacia la totalidad de desarrollos y botón para volver a destacados.
 - **Sistemas en Producción y Casos Reales:**
+  - **LatinoStream (Scraper API & Reproductor Propio):** Suite backend distribuida de web scraping para servidores de streaming (Películas, Series, Anime), documentación OpenAPI 3.1 / Swagger, unificación de 9 proveedores en tiempo real, extracción directa de streams sin publicidad y proxy inverso HLS.
   - **URL Miner:** Suite de extracción y filtrado masivo de URLs con puente *Live Drop* efímero entre dispositivos.
   - **Hogar Mi Casita:** Plataforma en producción para cliente real de salud gerontológica (PWA instalable, Schema.org SEO, WhatsApp).
   - **Grúa Robótica 4-DOF:** Control en tiempo real con Arduino UNO, comunicación serial, GUI en Python (Pygame) y soporte para joystick.
