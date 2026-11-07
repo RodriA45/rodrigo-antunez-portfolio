@@ -40,7 +40,7 @@ export function CapstoneProject() {
               <FaGraduationCap /> {isEnglish ? 'University Degree Capstone Project' : 'Proyecto Final de Graduación'}
             </span>
             <span className="capstone-team-badge">
-              <FaUsers /> {isEnglish ? 'Teamwork (3 Developers)' : 'Trabajo en Equipo (3 Integrantes)'}
+              <FaUsers /> {isEnglish ? 'Teamwork' : 'Trabajo en Equipo'}
             </span>
           </div>
           <h2 className="section-title">
