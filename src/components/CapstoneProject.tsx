@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import { FaGraduationCap, FaUsers, FaGamepad, FaDatabase, FaShieldAlt, FaChevronLeft, FaChevronRight, FaExternalLinkAlt } from 'react-icons/fa';
 import { ImageModal } from './ImageModal';
 import imgUniGames1 from '../assets/images/unigames-1.webp';
-import imgUniGames2 from '../assets/images/unigames-2.png';
+import imgUniGames2 from '../assets/images/unigames-2.webp';
 import './CapstoneProject.css';
 
 export function CapstoneProject() {
@@ -63,7 +63,7 @@ export function CapstoneProject() {
           <div className="capstone-visual" onClick={() => setIsLightboxOpen(true)}>
             <img 
               src={images[currentImageIndex]} 
-              alt="UniGames Screenshot" 
+              alt={isEnglish ? `UniGames web platform screenshot ${currentImageIndex + 1}` : `Captura ${currentImageIndex + 1} de la plataforma web UniGames`} 
               className="capstone-image" 
               loading="lazy" 
             />
@@ -99,9 +99,16 @@ export function CapstoneProject() {
             
             <p className="capstone-desc">
               {isEnglish 
-                ? 'Interactive Single Page Application engineered for rapid pop-culture mini-games and pixel-art adventures. Built from scratch with our custom HTML5 Canvas engine (engine2d.js) handling physics, particles, and collision detection. Incorporates Supabase Auth with Google OAuth, local PostgreSQL synchronization, friends system, 1v1 real-time duels, and a full administrative dashboard with user sanctions.'
-                : 'Aplicación web interactiva (SPA) que reúne minijuegos temáticos y aventuras pixel-art impulsadas por un motor 2D propio desarrollado desde cero en HTML5 Canvas (engine2d.js) con físicas, partículas y colisiones. Integra autenticación con Supabase y Google OAuth sincronizado con PostgreSQL, sistema de amigos, duelos 1v1 y un panel de administración completo con moderación y estadísticas.'}
+                ? 'Interactive Single Page Application engineered for rapid pop-culture mini-games and pixel-art adventures. Combines a custom HTML5 Canvas engine (engine2d.js) with Supabase Auth, local PostgreSQL synchronization, friends system, 1v1 duels, and an administrative dashboard.'
+                : 'Aplicación web interactiva (SPA) que reúne minijuegos temáticos y aventuras pixel-art. Integra un motor 2D propio en HTML5 Canvas (engine2d.js) junto con autenticación Supabase + Google OAuth, sincronización PostgreSQL, sistema de amigos, duelos 1v1 y panel administrativo.'}
             </p>
+
+            <div className="capstone-role-box">
+              <strong>{isEnglish ? 'My role in the team (Backend):' : 'Mi rol en el equipo (Backend):'}</strong>{' '}
+              {isEnglish
+                ? 'Full Backend development — Node.js/Express architecture, authentication (Supabase Auth & Google OAuth), PostgreSQL synchronization, friends/duels API, and admin moderation logic (a Frontend teammate built the 2D Canvas engine).'
+                : 'Desarrollo íntegro del Backend — arquitectura Node.js/Express, autenticación (Supabase Auth y Google OAuth), base de datos PostgreSQL, API de duelos/amigos y lógica de moderación (el motor 2D de Frontend estuvo a cargo de mi compañero).'}
+            </div>
 
             <div className="capstone-features-grid">
               <div className="capstone-feature-item">

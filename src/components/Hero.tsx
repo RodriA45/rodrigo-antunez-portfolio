@@ -5,7 +5,7 @@ import { SiTypescript, SiPostgresql, SiFlask } from 'react-icons/si';
 import './Hero.css';
 
 export function Hero() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
 
   return (
     <section className="hero-section">
@@ -16,7 +16,7 @@ export function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <img src="https://avatars.githubusercontent.com/u/201253675?v=4" alt="Rodrigo Antúnez" className="hero-avatar" />
+          <img src="https://avatars.githubusercontent.com/u/201253675?v=4" alt={i18n.language === 'en' ? 'Profile photo of Rodrigo Antúnez, Full Stack Developer' : 'Foto de perfil de Rodrigo Antúnez, Desarrollador Full Stack'} className="hero-avatar" />
           <h1 className="hero-title text-gradient">{t('hero.title')}</h1>
           <h2 className="hero-subtitle">{t('hero.subtitle')}</h2>
           

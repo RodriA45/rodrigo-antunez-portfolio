@@ -5,8 +5,8 @@
   --bg-tertiary: #1e1e1e;      /* Lighter again for hover states/borders */
   
   --text-primary: #ffffff;
-  --text-secondary: #a3a3a3;
-  --text-muted: #737373;
+  --text-secondary: #d4d4d8;
+  --text-muted: #a1a1aa;
   
   /* Accent Color - Professional Blue */
   --accent-primary: #3b82f6;   /* Clean modern blue */
@@ -86,8 +86,17 @@ a {
   transition: color var(--transition-fast);
 }
 
-a:hover {
-  color: var(--accent-hover);
+a:focus-visible,
+button:focus-visible,
+[tabindex]:focus-visible {
+  outline: 2px solid var(--accent-light);
+  outline-offset: 3px;
+}
+
+@media (hover: hover) {
+  a:hover {
+    color: var(--accent-hover);
+  }
 }
 
 /* Spotlight Background */
@@ -178,9 +187,11 @@ a:hover {
   transition: transform var(--transition-normal), border-color var(--transition-normal), background var(--transition-normal);
 }
 
-.glass-panel:hover {
-  border-color: rgba(255, 255, 255, 0.15);
-  background: rgba(25, 25, 25, 0.7);
+@media (hover: hover) {
+  .glass-panel:hover {
+    border-color: rgba(255, 255, 255, 0.15);
+    background: rgba(25, 25, 25, 0.7);
+  }
 }
 
 /* Container for layout */
@@ -199,7 +210,7 @@ a:hover {
 
 /* Typography Utility Classes */
 .text-gradient {
-  background: linear-gradient(to right, var(--text-primary), var(--text-muted));
+  background: linear-gradient(to right, var(--text-primary), #cbd5e1);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;

@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import { FaGithub, FaExternalLinkAlt, FaWhatsapp, FaChevronLeft, FaChevronRight } from 'react-icons/fa';
+import { FaGithub, FaExternalLinkAlt, FaWhatsapp, FaChevronLeft, FaChevronRight, FaLock } from 'react-icons/fa';
 import type { Project } from '../data/projects';
 import { ImageModal } from './ImageModal';
 import './ProjectCard.css';
@@ -50,7 +50,12 @@ export function ProjectCard({ project, isHero }: ProjectCardProps) {
       {images.length > 0 && (
         <>
           <div className="project-image-container" onClick={() => setIsLightboxOpen(true)} style={{ cursor: 'pointer' }}>
-            <img src={images[currentImageIndex]} alt={project.title} className="project-image" loading="lazy" />
+            <img
+              src={images[currentImageIndex]}
+              alt={i18n.language === 'en' ? `${project.title} screenshot ${currentImageIndex + 1}` : `Captura ${currentImageIndex + 1} de ${project.title}`}
+              className="project-image"
+              loading="lazy"
+            />
             
             {images.length > 1 && (
             <>
@@ -145,17 +150,35 @@ export function ProjectCard({ project, isHero }: ProjectCardProps) {
         )}
       </div>
       
-      {(project.githubUrl || project.demoUrl) && (
+      {(project.githubUrl || project.demoUrl || project.isPrivateClient) && (
         <div className="project-links">
           {project.githubUrl && (
-            <a href={project.githubUrl} target="_blank" rel="noopener noreferrer" className="project-link" aria-label={t('projects.code', 'Código')}>
-              <FaGithub size={20} />
+            <a
+              href={project.githubUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="project-link"
+              aria-label={i18n.language === 'en' ? `Source code of ${project.title} on GitHub` : `Código fuente de ${project.title} en GitHub`}
+            >
+              <FaGithub size={20} aria-hidden="true" />
               <span>{t('projects.code', 'Código')}</span>
             </a>
           )}
+          {!project.githubUrl && project.isPrivateClient && (
+            <span className="project-private-label">
+              <FaLock size={14} aria-hidden="true" />
+              <span>{t('projects.private_code', 'Código privado (Proyecto de cliente)')}</span>
+            </span>
+          )}
           {project.demoUrl && (
-            <a href={project.demoUrl} target="_blank" rel="noopener noreferrer" className="project-link demo-link" aria-label={t('projects.demo', 'Demo')}>
-              <FaExternalLinkAlt size={20} />
+            <a
+              href={project.demoUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="project-link demo-link"
+              aria-label={i18n.language === 'en' ? `Live demo of ${project.title}` : `Demo en vivo de ${project.title}`}
+            >
+              <FaExternalLinkAlt size={20} aria-hidden="true" />
               <span>{t('projects.demo', 'Demo')}</span>
             </a>
           )}

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://rodria45.github.io/rodrigo-antunez-portfolio/sitemap.xml

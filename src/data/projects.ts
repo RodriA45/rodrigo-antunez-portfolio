@@ -1,15 +1,15 @@
-import imgEstelar1 from '../assets/images/estelar-1.png';
-import imgEstelar2 from '../assets/images/estelar-2.png';
-import imgEstelar3 from '../assets/images/estelar-3.png';
-import imgEstelar4 from '../assets/images/estelar-4.png';
-import imgEstelar5 from '../assets/images/estelar-5.png';
-import imgEstelar6 from '../assets/images/estelar-6.png';
-import imgEstelar7 from '../assets/images/estelar-7.png';
-import imgEstelar8 from '../assets/images/estelar-8.png';
-import imgEstelar9 from '../assets/images/estelar-9.png';
-import imgEstelar10 from '../assets/images/estelar-10.png';
-import imgEstelar11 from '../assets/images/estelar-11.png';
-import imgEstelar12 from '../assets/images/estelar-12.png';
+import imgEstelar1 from '../assets/images/estelar-1.webp';
+import imgEstelar2 from '../assets/images/estelar-2.webp';
+import imgEstelar3 from '../assets/images/estelar-3.webp';
+import imgEstelar4 from '../assets/images/estelar-4.webp';
+import imgEstelar5 from '../assets/images/estelar-5.webp';
+import imgEstelar6 from '../assets/images/estelar-6.webp';
+import imgEstelar7 from '../assets/images/estelar-7.webp';
+import imgEstelar8 from '../assets/images/estelar-8.webp';
+import imgEstelar9 from '../assets/images/estelar-9.webp';
+import imgEstelar10 from '../assets/images/estelar-10.webp';
+import imgEstelar11 from '../assets/images/estelar-11.webp';
+import imgEstelar12 from '../assets/images/estelar-12.webp';
 import imgProfesor from '../assets/images/profesor-interactivo.webp';
 import imgFinTrack from '../assets/images/fin-track.webp';
 import imgJarvis from '../assets/images/jarvis.webp';
@@ -37,52 +37,52 @@ import imgRutear4 from '../assets/images/rutear-4.webp';
 import imgRutear5 from '../assets/images/rutear-5.webp';
 import imgRutear6 from '../assets/images/rutear-6.webp';
 import imgRutear7 from '../assets/images/rutear-7.webp';
-import imgPendriMP3 from '../assets/images/pendrimp3.png';
+import imgPendriMP3 from '../assets/images/pendrimp3.webp';
 
-import imgDragonBall1 from '../assets/images/Dragon-ball-web-1.png';
-import imgDragonBall2 from '../assets/images/Dragon-ball-web-2.png';
-import imgDragonBall3 from '../assets/images/Dragon-ball-web-3.png';
-import imgDragonBall4 from '../assets/images/Dragon-ball-web-4.png';
-import imgDragonBall5 from '../assets/images/Dragon-ball-web-5.png';
-import imgDragonBall6 from '../assets/images/Dragon-ball-web-6.png';
+import imgDragonBall1 from '../assets/images/Dragon-ball-web-1.webp';
+import imgDragonBall2 from '../assets/images/Dragon-ball-web-2.webp';
+import imgDragonBall3 from '../assets/images/Dragon-ball-web-3.webp';
+import imgDragonBall4 from '../assets/images/Dragon-ball-web-4.webp';
+import imgDragonBall5 from '../assets/images/Dragon-ball-web-5.webp';
+import imgDragonBall6 from '../assets/images/Dragon-ball-web-6.webp';
 
-import imgURLMiner1 from '../assets/images/url-miner-1.png';
-import imgURLMiner2 from '../assets/images/url-miner-2.png';
-import imgURLMiner3 from '../assets/images/url-miner-3.png';
-import imgURLMiner4 from '../assets/images/url-miner-4.png';
-import imgURLMiner5 from '../assets/images/url-miner-5.png';
+import imgURLMiner1 from '../assets/images/url-miner-1.webp';
+import imgURLMiner2 from '../assets/images/url-miner-2.webp';
+import imgURLMiner3 from '../assets/images/url-miner-3.webp';
+import imgURLMiner4 from '../assets/images/url-miner-4.webp';
+import imgURLMiner5 from '../assets/images/url-miner-5.webp';
 
-import imgGruaRobotica1 from '../assets/images/grua-robotica-1.png';
-import imgGruaRobotica2 from '../assets/images/grua-robotica-2.png';
-import imgGruaRobotica3 from '../assets/images/grua-robotica-3.jpg';
+import imgGruaRobotica1 from '../assets/images/grua-robotica-1.webp';
+import imgGruaRobotica2 from '../assets/images/grua-robotica-2.webp';
+import imgGruaRobotica3 from '../assets/images/grua-robotica-3.webp';
 
-import imgHogarMiCasita1 from '../assets/images/hogar-mi-casita-1.png';
-import imgHogarMiCasita2 from '../assets/images/hogar-mi-casita-2.png';
+import imgHogarMiCasita1 from '../assets/images/hogar-mi-casita-1.webp';
+import imgHogarMiCasita2 from '../assets/images/hogar-mi-casita-2.webp';
 
 
-import imgCastWeb1 from '../assets/images/castweb-1.png';
-import imgCastWeb2 from '../assets/images/castweb-2.png';
+import imgCastWeb1 from '../assets/images/castweb-1.webp';
+import imgCastWeb2 from '../assets/images/castweb-2.webp';
 
-import imgSIGE1 from '../assets/images/sige-1.png';
-import imgSIGE2 from '../assets/images/sige-2.png';
-import imgSIGE3 from '../assets/images/sige-3.png';
-import imgSIGE4 from '../assets/images/sige-4.png';
+import imgSIGE1 from '../assets/images/sige-1.webp';
+import imgSIGE2 from '../assets/images/sige-2.webp';
+import imgSIGE3 from '../assets/images/sige-3.webp';
+import imgSIGE4 from '../assets/images/sige-4.webp';
 
-import imgTallerMotos1 from '../assets/images/taller-motos-1.png';
-import imgTallerMotos2 from '../assets/images/taller-motos-2.png';
-import imgTallerMotos3 from '../assets/images/taller-motos-3.png';
-import imgTallerMotos4 from '../assets/images/taller-motos-4.png';
+import imgTallerMotos1 from '../assets/images/taller-motos-1.webp';
+import imgTallerMotos2 from '../assets/images/taller-motos-2.webp';
+import imgTallerMotos3 from '../assets/images/taller-motos-3.webp';
+import imgTallerMotos4 from '../assets/images/taller-motos-4.webp';
 
-import imgReflex1 from '../assets/images/reflex-trackmanager-1.png';
+import imgReflex1 from '../assets/images/reflex-trackmanager-1.webp';
 
-import imgTurnoNoche1 from '../assets/images/turno-noche-1.png';
-import imgTurnoNoche2 from '../assets/images/turno-noche-2.png';
+import imgTurnoNoche1 from '../assets/images/turno-noche-1.webp';
+import imgTurnoNoche2 from '../assets/images/turno-noche-2.webp';
 
-import imgLatinoStream1 from '../assets/images/latino-stream-1.jpg';
-import imgLatinoStream2 from '../assets/images/latino-stream-2.jpg';
-import imgLatinoStream3 from '../assets/images/latino-stream-3.png';
-import imgLatinoStream4 from '../assets/images/latino-stream-4.jpg';
-import imgLatinoStream5 from '../assets/images/latino-stream-5.jpg';
+import imgLatinoStream1 from '../assets/images/latino-stream-1.webp';
+import imgLatinoStream2 from '../assets/images/latino-stream-2.webp';
+import imgLatinoStream3 from '../assets/images/latino-stream-3.webp';
+import imgLatinoStream4 from '../assets/images/latino-stream-4.webp';
+import imgLatinoStream5 from '../assets/images/latino-stream-5.webp';
 
 export interface Project {
   id: string;
@@ -103,15 +103,16 @@ export interface Project {
     type?: 'whatsapp' | 'video' | 'github';
   };
   isMockup?: boolean;
+  isPrivateClient?: boolean;
 }
 
 export const projects: Project[] = [
   {
     id: 'url-miner-extractor',
     title: 'URL Miner - Smart Extractor & Live Text Bridge',
-    description: 'Suite web avanzada de extracción masiva de URLs y puente de texto en tiempo real (v3.2.0). Incluye motor de minado con regex de alta precisión, filtros por dominio o extensión, formateador en lote (HTML/Markdown), puente "Live Drop" efímero entre dispositivos mediante salas o QR sin registro, limpieza de analítica (UTM, fbclid), historial local y temas dinámicos Neo-Brutalist y Matrix.',
-    descriptionEn: 'Advanced web suite for bulk URL extraction and real-time live text bridging (v3.2.0). Features a high-precision regex mining engine, domain/extension filtering, batch link formatter (HTML/Markdown), ephemeral "Live Drop" bridge between devices via room codes or QR without accounts, tracking parameter sanitizer (UTM, fbclid), local history, and dynamic Neo-Brutalist & Matrix themes.',
-    technologies: ['React', 'TypeScript', 'Live Drop P2P', 'Tailwind / Neo-Brutalist', 'Regex Engine', 'Privacy-First'],
+    description: 'Extrae y limpia enlaces masivamente desde texto sucio o HTML, y comparte fragmentos efímeros entre dispositivos por QR sin cuentas ni backend.',
+    descriptionEn: 'Bulk-extract and sanitize URLs from raw text or HTML, and bridge ephemeral snippets across devices via QR without accounts.',
+    technologies: ['React', 'TypeScript', 'Live Drop P2P', 'Regex Engine', 'Privacy-First'],
     category: 'Frontend',
     demoUrl: 'https://url-miner.vercel.app/',
     githubUrl: 'https://github.com/RodriA45/URL-Miner',
@@ -124,21 +125,22 @@ export const projects: Project[] = [
   {
     id: 'hogar-mi-casita',
     title: 'Hogar Mi Casita - Cuidado Gerontológico',
-    description: 'Plataforma web desplegada en producción para un cliente real de salud y cuidado del adulto mayor, con sedes en Buenos Aires y Tucumán. Construida con React, arquitectura PWA instalable, optimización SEO con metadatos estructurados (Schema.org JSON-LD MedicalOrganization), atención médica 24/7 y contacto directo por WhatsApp.',
-    descriptionEn: 'Live production web platform for a healthcare and elder care client with facilities in Buenos Aires and Tucumán. Built with React, installable PWA architecture, advanced SEO with structured schema (Schema.org JSON-LD MedicalOrganization), 24/7 care showcase, and instant WhatsApp integration.',
+    description: 'Plataforma web en producción para residencia gerontológica con sedes en Buenos Aires y Tucumán, optimizada para búsquedas locales y contacto directo por WhatsApp.',
+    descriptionEn: 'Live production web platform for a geriatric care organization in Buenos Aires and Tucumán, optimized for local SEO and instant WhatsApp inquiries.',
     technologies: ['React', 'TypeScript', 'PWA', 'SEO & Schema.org', 'Vite', 'Producción Real'],
     category: 'Frontend',
     demoUrl: 'https://hogar-mi-casita.onrender.com/',
     imageUrl: imgHogarMiCasita1,
     imageUrls: [imgHogarMiCasita1, imgHogarMiCasita2],
-    featured: true
+    featured: true,
+    isPrivateClient: true
   },
 
   {
     id: 'grua-robotica-4dof',
     title: 'Grúa Robótica 4-DOF (Control Serial)',
-    description: 'Sistema integral de control en tiempo real para brazo robótico articulado de 4 grados de libertad (4-DOF). Desarrollado con interfaz gráfica de escritorio en Python (Pygame), comunicación serial continua y microcontrolador Arduino UNO con interpolación cinemática suave para proteger los servomotores SG90. Soporta mandos USB (PlayStation, Xbox) con filtro de zona muerta y modo teclado automático.',
-    descriptionEn: 'Comprehensive real-time control system for a 4-DOF articulated robotic arm. Engineered with a Python (Pygame) desktop GUI, low-latency serial communication, and an Arduino UNO microcontroller with smooth kinematic interpolation to protect SG90 servo motors. Features USB gamepad support (PlayStation, Xbox) with deadzone filtering and automatic keyboard fallback.',
+    description: 'Sistema de teleoperación en tiempo real para brazo robótico de 4 ejes con cinemática suave que protege los servomotores y soporte para mandos USB o teclado.',
+    descriptionEn: 'Real-time teleoperation system for a 4-DOF robotic arm featuring smooth kinematic interpolation to protect servos and USB gamepad or keyboard control.',
     technologies: ['Python', 'Arduino UNO (C++)', 'Pygame GUI', 'Protocolo Serial', 'Robótica & Hardware'],
     category: 'Data & Scripts',
     githubUrl: 'https://github.com/RodriA45/Grua-Robotica-4dof',
@@ -149,8 +151,8 @@ export const projects: Project[] = [
   {
     id: 'castweb-p2p',
     title: 'CastWeb - Screen Sharing P2P',
-    description: 'Herramienta web moderna para la transmisión y recepción de pantalla y audio en tiempo real con latencia ultrabaja. Basada en tecnología WebRTC Peer-to-Peer, permite vincular dos dispositivos al instante mediante un código seguro de 4 dígitos sin configuraciones complejas ni instalaciones de software.',
-    descriptionEn: 'Modern web tool for sharing and receiving screen and audio in real time with ultra-low latency. Powered by WebRTC Peer-to-Peer technology, it enables instant pairing between devices using a secure 4-digit code without complicated setups or software installations.',
+    description: 'Comparte pantalla y audio entre dispositivos al instante con un código de 4 dígitos, logrando transmisión directa de latencia ultrabaja sin instalar software.',
+    descriptionEn: 'Share screen and audio instantly between devices with a 4-digit pairing code, achieving ultra-low latency P2P streaming with zero installation.',
     technologies: ['WebRTC', 'JavaScript', 'CSS3 Moderno', 'P2P Streaming', 'Real-Time'],
     category: 'Frontend',
     githubUrl: 'https://github.com/RodriA45/castweb',
@@ -356,7 +358,8 @@ export const projects: Project[] = [
     category: 'Full Stack',
     demoUrl: 'https://monitoreo360seguridad.com/',
     imageUrl: imgTurnos,
-    featured: true
+    featured: true,
+    isPrivateClient: true
   },
   {
     id: 'profesor-interactivo',

@@ -10,10 +10,12 @@
   min-width: 0;
 }
 
-.project-card:hover {
-  transform: translateY(-6px);
-  border-color: var(--accent-primary);
-  box-shadow: 0 15px 35px -5px rgba(0, 0, 0, 0.6), 0 0 20px var(--accent-glow);
+@media (hover: hover) {
+  .project-card:hover {
+    transform: translateY(-6px);
+    border-color: var(--accent-primary);
+    box-shadow: 0 15px 35px -5px rgba(0, 0, 0, 0.6), 0 0 20px var(--accent-glow);
+  }
 }
 
 .project-card::before {
@@ -32,8 +34,10 @@
   z-index: 10;
 }
 
-.project-card:hover::before {
-  opacity: 1;
+@media (hover: hover) {
+  .project-card:hover::before {
+    opacity: 1;
+  }
 }
 
 .project-content {
@@ -116,8 +120,10 @@
   transition: transform var(--transition-normal);
 }
 
-.project-card:hover .project-image {
-  transform: scale(1.05);
+@media (hover: hover) {
+  .project-card:hover .project-image {
+    transform: scale(1.05);
+  }
 }
 
 .project-link {
@@ -127,15 +133,34 @@
   font-size: 0.9rem;
   font-weight: 500;
   color: var(--text-secondary);
-  transition: color var(--transition-fast);
+  transition: color var(--transition-fast), transform var(--transition-fast);
 }
 
-.project-link:hover {
-  color: var(--text-primary);
+.project-link:active {
+  transform: scale(0.96);
 }
 
-.demo-link:hover {
-  color: var(--accent-primary);
+.project-private-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.84rem;
+  font-weight: 500;
+  color: var(--text-muted);
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--border-subtle);
+}
+
+@media (hover: hover) {
+  .project-link:hover {
+    color: var(--text-primary);
+  }
+
+  .demo-link:hover {
+    color: var(--accent-primary);
+  }
 }
 
 /* Mockup Badge */
@@ -178,12 +203,20 @@
   z-index: 10;
 }
 
-.project-image-container:hover .carousel-btn {
-  opacity: 1;
+@media (hover: hover) {
+  .project-image-container:hover .carousel-btn {
+    opacity: 1;
+  }
+
+  .carousel-btn:hover {
+    background: var(--accent-primary);
+  }
 }
 
-.carousel-btn:hover {
-  background: var(--accent-primary);
+@media (hover: none) {
+  .carousel-btn {
+    opacity: 0.8;
+  }
 }
 
 .prev-btn {

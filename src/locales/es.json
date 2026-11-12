@@ -7,8 +7,8 @@
     "contact": "Contacto"
   },
   "services": {
-    "title": "¿Qué puedo hacer por tu negocio?",
-    "subtitle": "Soluciones digitales a medida para potenciar tu presencia en línea y optimizar tus procesos.",
+    "title": "Servicios a Medida para Clientes",
+    "subtitle": "Si buscás digitalizar o escalar tu negocio: sitios web de alto impacto, landing pages y sistemas de gestión propios.",
     "web": {
       "title": "Creación de Páginas Web",
       "desc": "Sitios web modernos, rápidos y optimizados para destacar tu marca."
@@ -23,9 +23,9 @@
     }
   },
   "hero": {
-    "title": "Desarrollador Full Stack.",
+    "title": "Rodrigo Antúnez — Desarrollador Full Stack",
     "subtitle": "Transformo ideas en soluciones de software reales.",
-    "description": "Especializado en Python, React y arquitecturas backend. Diseño y desarrollo aplicaciones web escalables, intuitivas y enfocadas en resolver problemas de negocio reales.",
+    "description": "Desarrollador Full Stack en Tucumán (UTN), enfocado en React, Python, Node.js y arquitectura Backend. Construyo aplicaciones web escalables, APIs y software en producción tanto para equipos técnicos como para clientes reales.",
     "btn_projects": "Ver mis proyectos",
     "btn_contact": "Contactarme",
     "tech_title": "TECNOLOGÍAS CORE"
@@ -50,7 +50,8 @@
     "empty_title": "Próximamente más proyectos",
     "empty_desc": "Aún no he subido proyectos exclusivos para esta categoría, pero estoy trabajando en cosas nuevas.",
     "mockup_badge": "Maqueta",
-    "whatsapp_cta": "Hablar por WhatsApp"
+    "whatsapp_cta": "Hablar por WhatsApp",
+    "private_code": "Código privado (Proyecto de cliente)"
   },
   "contact": {
     "title": "¿Listo para llevar tu proyecto al siguiente nivel?",
@@ -69,9 +70,9 @@
     "p2": "Me apasiona construir software desde la base de datos hasta la interfaz de usuario, asegurando que cada pieza no solo funcione perfecto, sino que sea intuitiva, rápida y escale con el tiempo.",
     "p3": "Más allá del código, busco entender el modelo de negocio para que las soluciones que programo generen un impacto real y cuantificable.",
     "stat1_label": "Años",
-    "stat2_label": "Formación Técnica",
-    "stat3_label": "Tecnologías Dominadas",
-    "stat4_label": "Compromiso"
+    "stat2_label": "Tecnicatura en Programación",
+    "stat3_label": "Sistemas en Producción",
+    "stat4_label": "Proyectos & Sistemas"
   },
   "skills": {
     "title": "Habilidades Técnicas",
@@ -96,7 +97,7 @@
     "item3": {
       "year": "Fines 2026 / 2027",
       "title": "Culminación de Carrera & UniGames",
-      "desc": "Culminando mi titulación en la UTN con la presentación de UniGames (plataforma interactiva con motor 2D propio en Canvas) y consolidándome como Desarrollador Full Stack."
+      "desc": "Culminando mi titulación en la UTN con UniGames (proyecto en equipo donde desarrollé toda la arquitectura Backend, autenticación y base de datos) y consolidándome como Desarrollador Full Stack."
     }
   }
 }
