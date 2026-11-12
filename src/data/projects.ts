@@ -216,7 +216,7 @@ export const projects: Project[] = [
   },
   {
     id: 'taller-motos-antunez',
-    title: 'Taller Antúnez - CRM & Gestión SQLite v7.0',
+    title: 'Taller Antunez - CRM & Gestión SQLite v7.0',
     description: 'Sistema integral de gestión de taller mecánico y órdenes de servicio, migrado y optimizado a SQLite en su versión 7.0. Administra clientes frecuentes, ingresos de vehículos con fotografías adjuntas, facturación de tickets PDF, avisos automatizados a clientes vía WhatsApp y resumen económico con gráficos de ingresos de los últimos 6 meses.',
     descriptionEn: 'Comprehensive workshop management and service order system, migrated and optimized with SQLite in version 7.0. Manages frequent clients, vehicle intake with photo attachments, PDF ticket billing, automated WhatsApp customer notifications, and monthly economic summaries with historic income charts.',
     technologies: ['SQLite', 'Desktop App', 'WhatsApp API', 'Reportes PDF', 'Métricas & Gráficos'],

@@ -39,7 +39,7 @@ function App() {
       </main>
       
       <footer className="footer" style={{ textAlign: 'center', padding: 'var(--spacing-lg) var(--spacing-md)', color: 'var(--text-muted)', borderTop: '1px solid var(--border-subtle)', marginTop: 'var(--spacing-xl)' }}>
-        <p>© {new Date().getFullYear()} Rodrigo Antúnez. Desarrollador Full Stack.</p>
+        <p>© {new Date().getFullYear()} Rodrigo Antunez. Desarrollador Full Stack.</p>
       </footer>
       <BackToTop />
     </div>

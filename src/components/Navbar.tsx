@@ -62,7 +62,7 @@ export function Navbar() {
             href="#top"
             onClick={handleLogoClick}
             className={`logo-signature ${isLogoExpanded ? 'is-expanded' : ''}`}
-            aria-label="Rodrigo Antúnez"
+            aria-label="Rodrigo Antunez"
           >
             <span className="logo-word">
               <span className="logo-initial">R</span>
@@ -73,7 +73,7 @@ export function Navbar() {
             <span className="logo-word">
               <span className="logo-initial">A</span>
               <span className="logo-dot" aria-hidden="true">.</span>
-              <span className="logo-rest logo-rest-second">ntúnez</span>
+              <span className="logo-rest logo-rest-second">ntunez</span>
             </span>
           </a>
         </div>
