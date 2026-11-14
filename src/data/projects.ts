@@ -83,6 +83,7 @@ import imgLatinoStream2 from '../assets/images/latino-stream-2.webp';
 import imgLatinoStream3 from '../assets/images/latino-stream-3.webp';
 import imgLatinoStream4 from '../assets/images/latino-stream-4.webp';
 import imgLatinoStream5 from '../assets/images/latino-stream-5.webp';
+import imgLatinoStream6 from '../assets/images/latino-stream-6.webp';
 
 export interface Project {
   id: string;
@@ -164,17 +165,18 @@ export const projects: Project[] = [
   {
     id: 'latino-stream-scraper-api',
     title: 'LatinoStream - Scraper API & Reproductor Propio',
-    description: 'Suite backend y motor de scraping distribuido en tiempo real para servidores de streaming (Películas, Series y Anime en audio Latino). Integra API REST con OpenAPI 3.1 / Swagger, unificación multiserver de 9 proveedores (SoloLatino, CineCalidad, PelisFlix, etc.), extracción directa de streams sin anuncios ni popups, reverse proxy HLS y reproductor propio.',
-    descriptionEn: 'Real-time distributed backend scraper suite for video streaming platforms (Movies, Series, and Anime with Latino audio). Features REST API with OpenAPI 3.1 / Swagger, 9-provider multi-server normalization (SoloLatino, CineCalidad, etc.), direct ad-free stream extraction, HLS stream proxy, and a custom native web player.',
-    technologies: ['Backend API', 'Web Scraping', 'OpenAPI 3.1 (Swagger)', 'HLS Stream Proxy', 'Extracción de Streams', 'Reproductor Propio'],
+    description: 'Suite backend y motor de scraping distribuido en tiempo real para Películas, Series, Anime en audio Latino y TV en Vivo gratuita (+2.800 canales IPTV + TDT). Integra API REST con OpenAPI 3.1 / Swagger, unificación multiserver de 12 proveedores, extracción directa sin anuncios ni popups, reverse proxy HLS y reproductor propio.',
+    descriptionEn: 'Real-time distributed backend scraper suite for Movies, Series, Latino-dubbed Anime, and free Live TV (+2,800 IPTV + TDT channels). Features REST API with OpenAPI 3.1 / Swagger, 12-provider multi-server normalization, direct ad-free stream extraction, HLS stream proxy, and a custom native web player.',
+    technologies: ['Backend API', 'Web Scraping', 'OpenAPI 3.1 (Swagger)', 'IPTV / HLS Proxy', 'Extracción de Streams', 'Reproductor Propio'],
     category: 'Backend',
     imageUrl: imgLatinoStream1,
     imageUrls: [
       imgLatinoStream1,
-      imgLatinoStream2,
-      imgLatinoStream3,
+      imgLatinoStream6,
       imgLatinoStream4,
-      imgLatinoStream5
+      imgLatinoStream2,
+      imgLatinoStream5,
+      imgLatinoStream3
     ],
     featured: true,
     customCTA: {
