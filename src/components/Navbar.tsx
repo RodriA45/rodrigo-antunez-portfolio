@@ -96,7 +96,8 @@ export function Navbar() {
               aria-pressed={!isEnglish}
               aria-label="Cambiar a Español"
             >
-              ES
+              <span className="lang-code">ES</span>
+              <span className="lang-rest" aria-hidden="true">PAÑOL</span>
             </button>
             <span className="lang-divider" aria-hidden="true">|</span>
             <button
@@ -106,7 +107,8 @@ export function Navbar() {
               aria-pressed={isEnglish}
               aria-label="Switch to English"
             >
-              EN
+              <span className="lang-code">EN</span>
+              <span className="lang-rest" aria-hidden="true">GLISH</span>
             </button>
           </div>
           <button

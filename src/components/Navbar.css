@@ -164,6 +164,7 @@
   font-weight: 500;
   position: relative;
   padding: 0.25rem 0;
+  white-space: nowrap;
   transition: color var(--transition-fast);
 }
 
@@ -199,6 +200,9 @@
 }
 
 .lang-option {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   background: transparent;
   border: none;
   color: var(--text-muted);
@@ -208,13 +212,48 @@
   font-size: 0.8rem;
   font-weight: 700;
   letter-spacing: 0.03em;
+  white-space: nowrap;
+  -webkit-tap-highlight-color: transparent;
   transition: all var(--transition-fast);
+}
+
+.lang-code {
+  display: inline-block;
+  transition: color 0.35s ease;
+}
+
+.lang-rest {
+  display: inline-block;
+  max-width: 0;
+  overflow: hidden;
+  opacity: 0;
+  clip-path: inset(0 100% 0 0);
+  background: linear-gradient(90deg, var(--text-primary) 0%, var(--accent-light) 55%, var(--text-primary) 100%);
+  background-size: 220% 100%;
+  background-position: 100% 0;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  transition:
+    max-width 0.5s cubic-bezier(0.22, 1, 0.36, 1),
+    clip-path 0.5s cubic-bezier(0.22, 1, 0.36, 1),
+    opacity 0.3s ease,
+    background-position 0.65s ease;
 }
 
 .lang-option.active {
   background: var(--accent-primary);
   color: #ffffff;
   box-shadow: 0 2px 8px rgba(59, 130, 246, 0.25);
+}
+
+.lang-option.active .lang-rest {
+  background: linear-gradient(90deg, #ffffff 0%, rgba(255, 255, 255, 0.72) 55%, #ffffff 100%);
+  background-size: 220% 100%;
+  background-position: 100% 0;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .lang-option:active {
@@ -225,6 +264,20 @@
   .lang-option:not(.active):hover {
     color: var(--text-primary);
     background: rgba(255, 255, 255, 0.08);
+  }
+}
+
+/* Writing + fill animation only on desktop screens so mobile & narrow viewports stay unaffected */
+@media (hover: hover) and (min-width: 900px) {
+  .lang-option:hover .lang-rest {
+    max-width: 7ch;
+    opacity: 1;
+    clip-path: inset(0 0 0 0);
+    background-position: 0% 0;
+  }
+
+  .lang-option:not(.active):hover .lang-code {
+    color: var(--accent-light);
   }
 }
 
