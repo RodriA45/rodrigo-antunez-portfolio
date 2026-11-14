@@ -61,6 +61,13 @@
   }
 }
 
+@media (horizontal-viewport-segments: 2) {
+  .capstone-card {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: max(var(--spacing-xl), calc(env(viewport-segment-left 1 0) - env(viewport-segment-right 0 0) + 2rem));
+  }
+}
+
 .capstone-visual {
   position: relative;
   border-radius: var(--radius-md);

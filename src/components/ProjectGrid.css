@@ -26,10 +26,17 @@
 
 .project-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 320px), 1fr));
   gap: var(--spacing-lg);
   max-width: 100%;
   align-items: stretch;
+}
+
+@media (horizontal-viewport-segments: 2) {
+  .project-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: max(var(--spacing-lg), calc(env(viewport-segment-left 1 0) - env(viewport-segment-right 0 0) + 2rem));
+  }
 }
 
 .project-card-wrapper {

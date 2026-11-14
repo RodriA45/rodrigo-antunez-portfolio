@@ -199,12 +199,16 @@ button:focus-visible,
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 var(--spacing-lg);
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: max(var(--spacing-lg), env(safe-area-inset-left));
+  padding-right: max(var(--spacing-lg), env(safe-area-inset-right));
 }
 
 @media (max-width: 768px) {
   .container {
-    padding: 0 var(--spacing-md);
+    padding-left: max(var(--spacing-md), env(safe-area-inset-left));
+    padding-right: max(var(--spacing-md), env(safe-area-inset-right));
   }
 }
 

@@ -93,6 +93,13 @@
   }
 }
 
+@media (horizontal-viewport-segments: 2) {
+  .skills-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: max(var(--spacing-lg), calc(env(viewport-segment-left 1 0) - env(viewport-segment-right 0 0) + 2rem));
+  }
+}
+
 @media (max-width: 480px) {
   .skill-items {
     grid-template-columns: 1fr;
