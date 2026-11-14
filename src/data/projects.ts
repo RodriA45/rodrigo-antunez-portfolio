@@ -170,9 +170,9 @@ export const projects: Project[] = [
   {
     id: 'latino-stream-scraper-api',
     title: 'LatinoStream - Scraper API & Reproductor Propio',
-    description: 'Suite backend y motor de scraping distribuido en tiempo real para Películas, Series, Anime en audio Latino y TV en Vivo gratuita (+2.800 canales IPTV + TDT). Integra API REST con OpenAPI 3.1 / Swagger, unificación multiserver de 12 proveedores, extracción directa sin anuncios ni popups, reverse proxy HLS y reproductor propio.',
-    descriptionEn: 'Real-time distributed backend scraper suite for Movies, Series, Latino-dubbed Anime, and free Live TV (+2,800 IPTV + TDT channels). Features REST API with OpenAPI 3.1 / Swagger, 12-provider multi-server normalization, direct ad-free stream extraction, HLS stream proxy, and a custom native web player.',
-    technologies: ['Backend API', 'Web Scraping', 'OpenAPI 3.1 (Swagger)', 'IPTV / HLS Proxy', 'Extracción de Streams', 'Reproductor Propio'],
+    description: 'Suite backend en Python y motor de scraping en tiempo real para Películas, Series, Anime en audio Latino y TV en Vivo (+2.800 canales IPTV + TDT). Integra API REST (OpenAPI 3.1 / Swagger) con autenticación X-API-Key, unificación multiserver (10 proveedores VOD + 3 fuentes TV), extractores directos sin anuncios (Filemoon, LuluStream, Mixdrop, Ok.ru, Streamtape, VOE, VidHide, Streamwish), proxy CORS HLS con conversión de subtítulos (.srt a WebVTT), auto-fallback en reproductor propio y señales TV (/api/tv/check), monitoreo /api/health en tiempo real y suite de tests con pytest.',
+    descriptionEn: 'Real-time Python backend and distributed scraping suite for Movies, Series, Latino-dubbed Anime, and Live TV (+2,800 IPTV + TDT channels). Features an OpenAPI 3.1 / Swagger REST API with X-API-Key auth, multi-server normalization (10 VOD providers + 3 TV sources), ad-free direct extractors (Filemoon, LuluStream, Mixdrop, Ok.ru, Streamtape, VOE, VidHide, Streamwish), HLS CORS proxy with subtitle conversion (.srt to WebVTT), custom player & live-TV auto-fallback (/api/tv/check), real-time /api/health monitoring, and a pytest test suite.',
+    technologies: ['Python Backend', 'Web Scraping', 'OpenAPI 3.1 (Swagger)', 'IPTV / HLS Proxy', 'Extractores & Auto-Fallback', 'pytest & Monitoring'],
     category: 'Backend',
     imageUrl: imgLatinoStream1,
     imageUrls: [
