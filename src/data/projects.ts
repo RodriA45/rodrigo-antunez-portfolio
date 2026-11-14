@@ -30,6 +30,11 @@ import imgStreamFlow9 from '../assets/images/streamflow-9.webp';
 import imgStreamFlow10 from '../assets/images/streamflow-10.webp';
 import imgStreamFlow11 from '../assets/images/streamflow-11.webp';
 import imgStreamFlow12 from '../assets/images/streamflow-12.webp';
+import imgStreamFlow13 from '../assets/images/streamflow-13.webp';
+import imgStreamFlow14 from '../assets/images/streamflow-14.webp';
+import imgStreamFlow15 from '../assets/images/streamflow-15.webp';
+import imgStreamFlow16 from '../assets/images/streamflow-16.webp';
+import imgStreamFlow17 from '../assets/images/streamflow-17.webp';
 import imgRutear from '../assets/images/rutear.webp';
 import imgRutear2 from '../assets/images/rutear-2.webp';
 import imgRutear3 from '../assets/images/rutear-3.webp';
@@ -292,22 +297,27 @@ export const projects: Project[] = [
   {
     id: 'streamflow-app',
     title: 'StreamFlow',
-    description: 'Plataforma avanzada de streaming de video. Incluye sistema de perfiles, televisión en vivo (24/7) y compatibilidad total con Android TV y móviles (descarga directa vía APK o Downloader). Destaca por su rendimiento optimizado, registro de actualizaciones y sistema de acceso VIP, ofreciendo una experiencia inmersiva al estilo Netflix.',
-    descriptionEn: 'Advanced video streaming platform. Includes a profile system, live TV (24/7), and full compatibility with Android TV and mobile devices (direct download via APK or Downloader). Stands out for its optimized performance, update logs, and VIP access system, offering an immersive Netflix-style experience.',
-    technologies: ['React', 'CSS', 'JavaScript'],
+    description: 'Plataforma avanzada de streaming con temáticas estacionales dinámicas según fechas (en Inicio, Series, Anime y apartado especial de terror). Incluye Televisión en Vivo y Deportes (+210 canales por país, categoría y zonas regionales, señales HD con proxy estable, canales favoritos y Agenda Deportiva por torneo/calendario), múltiples perfiles, Android TV/móviles (APK/Downloader), registro de novedades y acceso VIP.',
+    descriptionEn: 'Advanced video streaming platform featuring dynamic date-based seasonal themes (across Home, Series, Anime, and a dedicated horror section). Includes Live TV & Sports (+210 channels by country, category, and regional feeds, HD streams with stable proxy, favorite channels, and Sports Schedule by tournament/calendar), user profiles, Android TV & mobile APK/Downloader support, changelog, and VIP access.',
+    technologies: ['React', 'CSS', 'JavaScript', 'TV en Vivo / IPTV', 'Android TV & APK', 'Temáticas Dinámicas'],
     category: 'Full Stack',
     demoUrl: 'https://streamflow-coral.vercel.app/',
     imageUrl: imgStreamFlow,
     imageUrls: [
       imgStreamFlow,
+      imgStreamFlow12,
+      imgStreamFlow13,
+      imgStreamFlow14,
+      imgStreamFlow15,
+      imgStreamFlow16,
+      imgStreamFlow17,
       imgStreamFlow3,
       imgStreamFlow4,
       imgStreamFlow5,
       imgStreamFlow8,
       imgStreamFlow9,
       imgStreamFlow10,
-      imgStreamFlow11,
-      imgStreamFlow12
+      imgStreamFlow11
     ],
     featured: true,
     customCTA: {
