@@ -28,7 +28,7 @@ function App() {
         <div className="blob blob-2"></div>
       </div>
       <Navbar />
-      <main style={{ paddingTop: '80px' }}>
+      <main className="main-content">
         <Hero />
         <AboutMe />
         <Services />

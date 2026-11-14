@@ -83,6 +83,12 @@
   }
 }
 
+@media (max-height: 540px) and (orientation: landscape) {
+  .capstone-visual {
+    height: 230px;
+  }
+}
+
 .capstone-image {
   width: 100%;
   height: 100%;

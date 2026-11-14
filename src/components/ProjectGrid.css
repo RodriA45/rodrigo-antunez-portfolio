@@ -253,6 +253,14 @@
   }
 }
 
+@media (max-height: 540px) and (orientation: landscape) {
+  .hero-project .project-image-container {
+    height: 220px;
+    min-height: 220px;
+    max-height: 220px;
+  }
+}
+
 /* Filters */
 .filters-container {
   display: flex;

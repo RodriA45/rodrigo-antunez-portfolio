@@ -194,6 +194,16 @@ button:focus-visible,
   }
 }
 
+.main-content {
+  padding-top: 80px;
+}
+
+@media (max-height: 540px) and (orientation: landscape) {
+  .main-content {
+    padding-top: 62px;
+  }
+}
+
 /* Container for layout */
 .container {
   width: 100%;
