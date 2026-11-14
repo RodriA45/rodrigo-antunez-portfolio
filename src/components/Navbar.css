@@ -267,7 +267,19 @@
   }
 }
 
-/* Writing + fill animation only on desktop screens so mobile & narrow viewports stay unaffected */
+/* Active/tap expansion works on all devices (auto-collapses after timeout on tap) */
+.lang-option.is-expanded .lang-rest {
+  max-width: 7ch;
+  opacity: 1;
+  clip-path: inset(0 0 0 0);
+  background-position: 0% 0;
+}
+
+.lang-option:not(.active).is-expanded .lang-code {
+  color: var(--accent-light);
+}
+
+/* Hover expansion applies on desktop so mobile taps don't stick */
 @media (hover: hover) and (min-width: 900px) {
   .lang-option:hover .lang-rest {
     max-width: 7ch;

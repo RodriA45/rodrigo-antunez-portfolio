@@ -7,7 +7,9 @@ export function Navbar() {
   const { t, i18n } = useTranslation();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isLogoExpanded, setIsLogoExpanded] = useState(false);
+  const [expandedLang, setExpandedLang] = useState<'es' | 'en' | null>(null);
   const logoTimerRef = useRef<number | null>(null);
+  const langTimerRef = useRef<number | null>(null);
 
   const isEnglish = i18n.language?.startsWith('en');
 
@@ -20,6 +22,9 @@ export function Navbar() {
       if (logoTimerRef.current !== null) {
         window.clearTimeout(logoTimerRef.current);
       }
+      if (langTimerRef.current !== null) {
+        window.clearTimeout(langTimerRef.current);
+      }
     };
   }, []);
 
@@ -27,10 +32,31 @@ export function Navbar() {
     if ((lang === 'en' && !isEnglish) || (lang === 'es' && isEnglish)) {
       i18n.changeLanguage(lang);
     }
+
+    if (logoTimerRef.current !== null) {
+      window.clearTimeout(logoTimerRef.current);
+      logoTimerRef.current = null;
+    }
+    setIsLogoExpanded(false);
+
+    if (langTimerRef.current !== null) {
+      window.clearTimeout(langTimerRef.current);
+    }
+    setExpandedLang(lang);
+    langTimerRef.current = window.setTimeout(() => {
+      setExpandedLang(null);
+      langTimerRef.current = null;
+    }, 2600);
   };
 
   const handleLogoClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
     e.preventDefault();
+    if (langTimerRef.current !== null) {
+      window.clearTimeout(langTimerRef.current);
+      langTimerRef.current = null;
+    }
+    setExpandedLang(null);
+
     if (logoTimerRef.current !== null) {
       window.clearTimeout(logoTimerRef.current);
     }
@@ -91,7 +117,7 @@ export function Navbar() {
           <div className="lang-toggle-group" role="group" aria-label={isEnglish ? 'Select language' : 'Seleccionar idioma'}>
             <button
               type="button"
-              className={`lang-option ${!isEnglish ? 'active' : ''}`}
+              className={`lang-option ${!isEnglish ? 'active' : ''} ${expandedLang === 'es' ? 'is-expanded' : ''}`}
               onClick={() => setLanguage('es')}
               aria-pressed={!isEnglish}
               aria-label="Cambiar a Español"
@@ -102,7 +128,7 @@ export function Navbar() {
             <span className="lang-divider" aria-hidden="true">|</span>
             <button
               type="button"
-              className={`lang-option ${isEnglish ? 'active' : ''}`}
+              className={`lang-option ${isEnglish ? 'active' : ''} ${expandedLang === 'en' ? 'is-expanded' : ''}`}
               onClick={() => setLanguage('en')}
               aria-pressed={isEnglish}
               aria-label="Switch to English"
