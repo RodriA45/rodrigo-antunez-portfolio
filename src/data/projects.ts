@@ -90,6 +90,9 @@ import imgLatinoStream4 from '../assets/images/latino-stream-4.webp';
 import imgLatinoStream5 from '../assets/images/latino-stream-5.webp';
 import imgLatinoStream6 from '../assets/images/latino-stream-6.webp';
 
+import imgDriverVault1 from '../assets/images/drivervault-1.webp';
+import imgDriverVault2 from '../assets/images/drivervault-2.webp';
+
 export interface Project {
   id: string;
   title: string;
@@ -237,6 +240,18 @@ export const projects: Project[] = [
       url: 'https://wa.me/5493865227220',
       type: 'whatsapp'
     }
+  },
+  {
+    id: 'drivervault-windows',
+    title: 'DriverVault - Respaldo de Drivers Windows',
+    description: 'Aplicación de escritorio portable para Windows (.exe) desarrollada en C# y .NET 8 WPF. Escanea controladores mediante APIs nativas (WMI, SetupAPI y pnputil), organiza respaldos automáticamente por categoría/fabricante con vista previa en vivo, genera instalador automático (Reinstalar_Drivers.bat), inventario HTML/TXT, compresión ZIP, modo claro/oscuro y pruebas unitarias con xUnit.',
+    descriptionEn: 'Portable Windows desktop application (.exe) built with C# and .NET 8 WPF. Scans drivers via native Windows APIs (WMI, SetupAPI, and pnputil), automatically organizes backups by category/vendor with a live folder tree preview, generates a one-click reinstall batch script, HTML/TXT inventory reports, optional ZIP compression, dark/light themes, and xUnit unit tests.',
+    technologies: ['C#', '.NET 8 WPF', 'Windows API (WMI)', 'xUnit', 'Desktop App (.exe)'],
+    category: 'Data & Scripts',
+    githubUrl: 'https://github.com/RodriA45/DriverVault-Windows',
+    imageUrl: imgDriverVault1,
+    imageUrls: [imgDriverVault1, imgDriverVault2],
+    featured: true
   },
   {
     id: 'reflex-trackmanager',
