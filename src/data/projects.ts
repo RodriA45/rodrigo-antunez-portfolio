@@ -173,9 +173,9 @@ export const projects: Project[] = [
   {
     id: 'latino-stream-scraper-api',
     title: 'LatinoStream - Scraper API & Reproductor Propio',
-    description: 'Suite backend en Python y motor de scraping en tiempo real para Películas, Series, Anime en audio Latino y TV en Vivo (+2.800 canales IPTV + TDT). Integra API REST (OpenAPI 3.1 / Swagger) con autenticación X-API-Key, unificación multiserver (10 proveedores VOD + 3 fuentes TV), extractores directos sin anuncios (Filemoon, LuluStream, Mixdrop, Ok.ru, Streamtape, VOE, VidHide, Streamwish), proxy CORS HLS con conversión de subtítulos (.srt a WebVTT), auto-fallback en reproductor propio y señales TV (/api/tv/check), monitoreo /api/health en tiempo real y suite de tests con pytest.',
-    descriptionEn: 'Real-time Python backend and distributed scraping suite for Movies, Series, Latino-dubbed Anime, and Live TV (+2,800 IPTV + TDT channels). Features an OpenAPI 3.1 / Swagger REST API with X-API-Key auth, multi-server normalization (10 VOD providers + 3 TV sources), ad-free direct extractors (Filemoon, LuluStream, Mixdrop, Ok.ru, Streamtape, VOE, VidHide, Streamwish), HLS CORS proxy with subtitle conversion (.srt to WebVTT), custom player & live-TV auto-fallback (/api/tv/check), real-time /api/health monitoring, and a pytest test suite.',
-    technologies: ['Python Backend', 'Web Scraping', 'OpenAPI 3.1 (Swagger)', 'IPTV / HLS Proxy', 'Extractores & Auto-Fallback', 'pytest & Monitoring'],
+    description: 'API REST en Python (Swagger) y scraper multiserver para cine, anime latino y TV en vivo (+2.800 canales). Incluye extractores sin anuncios, proxy HLS con subtítulos, auto-fallback, /api/health y tests pytest.',
+    descriptionEn: 'Python REST API (Swagger) and multi-server scraper for Latino movies, anime, and Live TV (+2,800 channels). Features ad-free extractors, HLS subtitle proxy, auto-fallback, /api/health, and pytest tests.',
+    technologies: ['Python', 'Web Scraping', 'OpenAPI 3.1', 'HLS Proxy', 'pytest'],
     category: 'Backend',
     imageUrl: imgLatinoStream1,
     imageUrls: [
@@ -188,8 +188,8 @@ export const projects: Project[] = [
     ],
     featured: true,
     customCTA: {
-      text: '¿Necesitas una API de scraping, extracción de video o desarrollo backend a medida? Háblame',
-      textEn: 'Do you need a custom scraping API, video stream extraction, or tailored backend architecture? Contact me.',
+      text: '¿Necesitas una API de scraping o backend a medida?',
+      textEn: 'Need a custom scraping API or backend architecture?',
       url: 'https://wa.me/5493865227220?text=Hola%20Rodrigo,%20vi%20tu%20proyecto%20de%20API%20Scraper%20y%20reproductor%20y%20me%20interesa%20un%20desarrollo%20similar.',
       type: 'whatsapp'
     }
@@ -197,16 +197,16 @@ export const projects: Project[] = [
   {
     id: 'sige-gestion-escolar',
     title: 'SIGE - Sistema Integral de Gestión Escolar',
-    description: 'Software de escritorio corporativo (.exe) para la gestión educativa y seguimiento de alumnos. Incluye módulo de auditoría de actividad para trazabilidad de operaciones, alertas de inasistencias y promedios por trimestre, exportación masiva de planillas a Excel, sistema de backups integrales en ZIP y tema visual claro/oscuro.',
-    descriptionEn: 'Corporate desktop software (.exe) for educational administration and student academic monitoring. Includes activity audit logs for operation traceability, attendance and grade threshold alerts by trimester, bulk Excel exports, automated ZIP backups, and light/dark theme switching.',
-    technologies: ['Desktop App (.exe)', 'Bases de Datos', 'Auditoría', 'Excel Exports', 'Seguridad & Backup'],
+    description: 'Software de escritorio (.exe) para gestión escolar y académica. Incluye auditoría de actividad, alertas de inasistencias y notas, exportación a Excel, backups en ZIP y tema claro/oscuro.',
+    descriptionEn: 'Desktop software (.exe) for school administration and student tracking. Includes activity audit logs, attendance and grade alerts, Excel exports, ZIP backups, and light/dark themes.',
+    technologies: ['Desktop App (.exe)', 'Bases de Datos', 'Auditoría', 'Excel & ZIP'],
     category: 'Data & Scripts',
     imageUrl: imgSIGE2,
     imageUrls: [imgSIGE2, imgSIGE1, imgSIGE3, imgSIGE4],
     featured: true,
     customCTA: {
-      text: '¿Quieres un sistema de gestión escolar para tu institución o colegio? Háblame',
-      textEn: 'Do you want a school management system for your institution or school? Contact me.',
+      text: '¿Querés un sistema escolar para tu institución?',
+      textEn: 'Want a school management system for your institution?',
       url: 'https://wa.me/5493865227220',
       type: 'whatsapp'
     }
@@ -214,9 +214,9 @@ export const projects: Project[] = [
   {
     id: 'el-turno-noche-hospital',
     title: 'El Turno Noche: Hospital San Anselmo (3D)',
-    description: 'Videojuego de terror psicológico episódico en 3D que corre 100% nativo en el navegador mediante Three.js y Vite. Inspirado en Fears to Fathom y Resident Evil, incluye 5 capítulos de tensión narrativa, cinemáticas analógicas VHS (1984), mecánicas de sigilo en casilleros, linterna física con cookies ópticos, audio espacial sintetizado proceduralmente (Web Audio API) y controles táctiles para móviles.',
-    descriptionEn: 'Episodic 3D psychological horror web game running 100% natively in the browser using Three.js and Vite. Inspired by Fears to Fathom and Resident Evil, it features 5 chapters, retro VHS cutscenes (1984), locker stealth mechanics, physics-based flashlight projection, procedural 3D spatial audio (Web Audio API), and mobile touch controls.',
-    technologies: ['Three.js', 'WebGL', 'Vite', 'Web Audio API', 'Procedural PBR', 'JavaScript'],
+    description: 'Juego 3D de terror psicológico en el navegador con Three.js y Vite. Incluye 5 capítulos, estética VHS, sigilo en casilleros, linterna física, audio espacial Web Audio y controles táctiles.',
+    descriptionEn: 'Browser-based 3D psychological horror game built with Three.js and Vite. Features 5 chapters, VHS aesthetics, locker stealth, physics flashlight, Web Audio 3D sound, and touch controls.',
+    technologies: ['Three.js', 'WebGL', 'Vite', 'Web Audio API', 'JavaScript'],
     category: 'Frontend',
     githubUrl: 'https://github.com/RodriA45/el-turno-noche-hospital',
     demoUrl: 'https://el-turno-noche-hospital.vercel.app/',
@@ -227,16 +227,16 @@ export const projects: Project[] = [
   {
     id: 'taller-motos-antunez',
     title: 'Taller Antunez - CRM & Gestión SQLite v7.0',
-    description: 'Sistema integral de gestión de taller mecánico y órdenes de servicio, migrado y optimizado a SQLite en su versión 7.0. Administra clientes frecuentes, ingresos de vehículos con fotografías adjuntas, facturación de tickets PDF, avisos automatizados a clientes vía WhatsApp y resumen económico con gráficos de ingresos de los últimos 6 meses.',
-    descriptionEn: 'Comprehensive workshop management and service order system, migrated and optimized with SQLite in version 7.0. Manages frequent clients, vehicle intake with photo attachments, PDF ticket billing, automated WhatsApp customer notifications, and monthly economic summaries with historic income charts.',
-    technologies: ['SQLite', 'Desktop App', 'WhatsApp API', 'Reportes PDF', 'Métricas & Gráficos'],
+    description: 'Sistema de taller mecánico v7.0 optimizado con SQLite. Gestiona clientes, órdenes con fotos, tickets PDF, avisos por WhatsApp y resumen económico con gráficos de ingresos.',
+    descriptionEn: 'Mechanical workshop CRM v7.0 powered by SQLite. Manages clients, photo service orders, PDF receipts, automated WhatsApp alerts, and monthly income analytics charts.',
+    technologies: ['SQLite', 'Desktop App', 'WhatsApp API', 'PDF & Gráficos'],
     category: 'Data & Scripts',
     imageUrl: imgTallerMotos1,
     imageUrls: [imgTallerMotos1, imgTallerMotos2, imgTallerMotos3, imgTallerMotos4],
     featured: false,
     customCTA: {
-      text: '¿Quieres un sistema de gestión para tu taller mecánico o negocio? Háblame',
-      textEn: 'Do you want a management system for your workshop or business? Contact me.',
+      text: '¿Querés un sistema de gestión para tu taller o negocio?',
+      textEn: 'Want a management system for your workshop or business?',
       url: 'https://wa.me/5493865227220',
       type: 'whatsapp'
     }
@@ -244,9 +244,9 @@ export const projects: Project[] = [
   {
     id: 'drivervault-windows',
     title: 'DriverVault - Respaldo de Drivers Windows',
-    description: 'Aplicación de escritorio portable para Windows (.exe) desarrollada en C# y .NET 8 WPF. Escanea controladores mediante APIs nativas (WMI, SetupAPI y pnputil), organiza respaldos automáticamente por categoría/fabricante con vista previa en vivo, genera instalador automático (Reinstalar_Drivers.bat), inventario HTML/TXT, compresión ZIP, modo claro/oscuro y pruebas unitarias con xUnit.',
-    descriptionEn: 'Portable Windows desktop application (.exe) built with C# and .NET 8 WPF. Scans drivers via native Windows APIs (WMI, SetupAPI, and pnputil), automatically organizes backups by category/vendor with a live folder tree preview, generates a one-click reinstall batch script, HTML/TXT inventory reports, optional ZIP compression, dark/light themes, and xUnit unit tests.',
-    technologies: ['C#', '.NET 8 WPF', 'Windows API (WMI)', 'xUnit', 'Desktop App (.exe)'],
+    description: 'App portable para Windows (.exe) en C# y .NET 8 WPF. Escanea drivers vía WMI/SetupAPI, los organiza por carpetas y genera instalador .bat, reporte HTML/TXT, ZIP y tests xUnit.',
+    descriptionEn: 'Portable Windows desktop app (.exe) in C# and .NET 8 WPF. Scans drivers via WMI/SetupAPI into organized folders and generates a .bat installer, HTML/TXT report, ZIP, and xUnit tests.',
+    technologies: ['C#', '.NET 8 WPF', 'Windows API', 'xUnit', 'Desktop (.exe)'],
     category: 'Data & Scripts',
     githubUrl: 'https://github.com/RodriA45/DriverVault-Windows',
     imageUrl: imgDriverVault1,
@@ -256,9 +256,9 @@ export const projects: Project[] = [
   {
     id: 'reflex-trackmanager',
     title: 'Reflex TrackManager 2026 (.NET 8 & ImGui)',
-    description: 'Modernización e ingeniería inversa de la herramienta comunitaria de gestión de pistas para MX vs ATV Reflex. Migración del backend a .NET 8, reemplazo de llamadas síncronas por HttpClient asíncrono para evitar bloqueos de interfaz, eliminación de endpoints AWS caídos, corrección del parser de Steam y desarrollo de overlay in-game en C++ con Dear ImGui y MinHook.',
-    descriptionEn: 'Modernization and reverse engineering of the community track management utility for MX vs ATV Reflex. Migrated backend to .NET 8, replaced legacy synchronous calls with asynchronous HttpClient, removed defunct AWS cloud servers causing startup crashes, fixed Steam library parser, and implemented a custom C++ in-game overlay via Dear ImGui and MinHook.',
-    technologies: ['C#', '.NET 8', 'C++', 'Dear ImGui', 'MinHook', 'Reverse Engineering'],
+    description: 'Modernización e ingeniería inversa para MX vs ATV Reflex: migración a .NET 8 asíncrono, corrección del parser de Steam y overlay in-game en C++ con Dear ImGui y MinHook.',
+    descriptionEn: 'Modernization and reverse engineering for MX vs ATV Reflex: async .NET 8 migration, Steam library parser fix, and a custom C++ in-game overlay built with Dear ImGui and MinHook.',
+    technologies: ['C#', '.NET 8', 'C++', 'Dear ImGui', 'MinHook'],
     category: 'Data & Scripts',
     githubUrl: 'https://github.com/RodriA45/Reflex-TrackManager-2026',
     imageUrl: imgReflex1,
@@ -283,8 +283,8 @@ export const projects: Project[] = [
   {
     id: 'estelar-3d',
     title: 'Estelar - Exploración Cósmica',
-    description: 'Experiencia inmersiva 3D en el navegador que permite explorar nuestro sistema solar y exoplanetas cinematográficos (como los de Interstellar). Incluye un tour espacial guiado, texturas de alta resolución, controles orbitales interactivos y efectos de iluminación astronómica en tiempo real.',
-    descriptionEn: 'Immersive 3D browser experience to explore our solar system and cinematic exoplanets. Includes a guided space tour, high-resolution textures, interactive orbital controls, and real-time realistic astronomical lighting effects.',
+    description: 'Experiencia web 3D interactiva para explorar el sistema solar y exoplanetas. Incluye tour guiado, texturas HD, controles orbitales e iluminación astronómica en tiempo real.',
+    descriptionEn: 'Interactive 3D web experience to explore our solar system and exoplanets. Features a guided tour, HD textures, orbital controls, and real-time astronomical lighting.',
     technologies: ['React', 'Three.js', 'WebGL', 'Framer Motion'],
     category: 'Frontend',
     demoUrl: 'https://estelar-3-d.vercel.app/',
@@ -300,8 +300,8 @@ export const projects: Project[] = [
   {
     id: 'rutear-simulador',
     title: 'Rutear - Simulador de Viajes Inteligente',
-    description: 'Plataforma avanzada para la planificación integral de viajes en ruta. Cuenta con un cotizador inteligente que calcula con precisión costos de combustible, peajes, distancias y paradas sugeridas. Incluye mapas interactivos, recomendaciones para el viajero y contactos de emergencia en una interfaz inmersiva y moderna.',
-    descriptionEn: 'Advanced platform for comprehensive road trip planning. It features an intelligent quoter that accurately calculates fuel costs, tolls, distances, and suggested stops. Includes interactive maps, traveler recommendations, and emergency contacts in an immersive and modern interface.',
+    description: 'Plataforma web para planificar viajes en ruta. Calcula costos de combustible, peajes, distancias y paradas con mapas interactivos, recomendaciones y contactos de emergencia.',
+    descriptionEn: 'Web platform for road trip planning. Accurately calculates fuel costs, tolls, distances, and stops with interactive maps, travel tips, and emergency contacts.',
     technologies: ['React', 'JavaScript', 'CSS', 'Map APIs'],
     category: 'Frontend',
     demoUrl: 'https://rutear-simulador-viajes.vercel.app/',
@@ -312,9 +312,9 @@ export const projects: Project[] = [
   {
     id: 'streamflow-app',
     title: 'StreamFlow',
-    description: 'Plataforma avanzada de streaming con temáticas estacionales dinámicas según fechas (en Inicio, Series, Anime y apartado especial de terror). Incluye Televisión en Vivo y Deportes (+210 canales por país, categoría y zonas regionales, señales HD con proxy estable, canales favoritos y Agenda Deportiva por torneo/calendario), múltiples perfiles, Android TV/móviles (APK/Downloader), registro de novedades y acceso VIP.',
-    descriptionEn: 'Advanced video streaming platform featuring dynamic date-based seasonal themes (across Home, Series, Anime, and a dedicated horror section). Includes Live TV & Sports (+210 channels by country, category, and regional feeds, HD streams with stable proxy, favorite channels, and Sports Schedule by tournament/calendar), user profiles, Android TV & mobile APK/Downloader support, changelog, and VIP access.',
-    technologies: ['React', 'CSS', 'JavaScript', 'TV en Vivo / IPTV', 'Android TV & APK', 'Temáticas Dinámicas'],
+    description: 'Plataforma de streaming con temáticas estacionales dinámicas, TV en vivo y Deportes (+210 canales HD con proxy estable, zonas y agenda deportiva), perfiles y soporte Android TV/APK.',
+    descriptionEn: 'Streaming platform with dynamic seasonal themes, Live TV & Sports (+210 HD channels with stable proxy, regional feeds, and sports schedule), profiles, and Android TV/APK support.',
+    technologies: ['React', 'IPTV / HLS', 'Android TV', 'Temáticas Dinámicas'],
     category: 'Full Stack',
     demoUrl: 'https://streamflow-coral.vercel.app/',
     imageUrl: imgStreamFlow,
@@ -336,8 +336,8 @@ export const projects: Project[] = [
     ],
     featured: true,
     customCTA: {
-      text: '¿Quieres disfrutar de las mejores Películas, Series y Anime en tu TV o Celular?',
-      textEn: 'Do you want to enjoy the best Movies, Series, and Anime on your TV or Phone?',
+      text: '¿Querés ver películas, series y TV en tu celular o TV?',
+      textEn: 'Want movies, series, and Live TV on your TV or phone?',
       url: 'https://wa.me/5493865227220',
       type: 'whatsapp'
     }
@@ -379,8 +379,8 @@ export const projects: Project[] = [
   {
     id: 'turnos-pagina-web',
     title: 'Sistema de Gestión de Turnos Web',
-    description: 'Plataforma integral desarrollada a medida para un cliente real de seguridad electrónica. Resolvió el problema de solapamiento de horarios automatizando la agenda y enviando notificaciones en tiempo real por WhatsApp y Email. Desplegada exitosamente en producción.',
-    descriptionEn: 'Comprehensive web appointment management system custom-developed for a real electronic security client. Solved schedule overlapping by automating the calendar and sending real-time notifications via WhatsApp and Email. Successfully deployed in production.',
+    description: 'Sistema web de turnos en producción para cliente de seguridad electrónica. Automatiza la agenda evitando solapamientos con avisos en tiempo real por WhatsApp y Email.',
+    descriptionEn: 'Production web appointment system for an electronic security client. Automates overlap-free scheduling with real-time WhatsApp and Email notifications.',
     technologies: ['HTML', 'JavaScript', 'Python/Flask', 'PostgreSQL', 'Render'],
     category: 'Full Stack',
     demoUrl: 'https://monitoreo360seguridad.com/',
@@ -391,8 +391,8 @@ export const projects: Project[] = [
   {
     id: 'profesor-interactivo',
     title: 'Profesor Interactivo (EdTech)',
-    description: 'Plataforma interactiva para docentes. Implementé WebSockets para permitir conexión en tiempo real entre la pizarra digital del profesor y los dispositivos de los alumnos mediante códigos QR, logrando encuestas y feedback anónimo sin latencia.',
-    descriptionEn: 'Interactive platform for teachers. I implemented WebSockets to enable real-time connection between the teacher\'s digital whiteboard and students\' devices via QR codes, achieving latency-free anonymous polls and feedback.',
+    description: 'Plataforma EdTech con WebSockets que conecta la pizarra del docente con celulares de alumnos vía QR para encuestas y feedback anónimo en tiempo real sin latencia.',
+    descriptionEn: 'EdTech platform using WebSockets to link a teacher\'s board with student phones via QR codes for zero-latency live polls and anonymous feedback.',
     technologies: ['JavaScript', 'WebSockets', 'HTML/CSS'],
     category: 'Frontend',
     demoUrl: 'https://profesor-interactivo.vercel.app',
@@ -457,8 +457,8 @@ export const projects: Project[] = [
     imageUrl: imgCleansweep,
     featured: false,
     customCTA: {
-      text: '¿Quieres un Limpiador de Dependencias y espacio para tus proyectos de programación? Háblame',
-      textEn: 'Do you want a Dependency Cleaner and free space for your programming projects? Contact me.',
+      text: '¿Querés un limpiador de espacio para tus proyectos?',
+      textEn: 'Want a dependency and space cleaner for your projects?',
       url: 'https://wa.me/5493865227220',
       type: 'whatsapp'
     }

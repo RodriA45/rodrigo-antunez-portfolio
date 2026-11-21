@@ -104,46 +104,17 @@ export function ProjectCard({ project, isHero }: ProjectCardProps) {
           ))}
         </div>
         {project.customCTA && (
-          <div className="custom-cta-box" style={{ 
-            marginTop: 'auto', 
-            padding: '1rem', 
-            backgroundColor: 'rgba(37, 211, 102, 0.05)', 
-            border: '1px solid rgba(37, 211, 102, 0.3)', 
-            borderRadius: 'var(--radius-md)', 
-            display: 'flex', 
-            flexDirection: 'column', 
-            gap: '0.75rem' 
-          }}>
-            <p style={{ margin: 0, fontSize: '0.95rem', color: 'var(--text-primary)', fontWeight: 500 }}>
+          <div className="custom-cta-box">
+            <p className="custom-cta-text">
               {isEnglish && project.customCTA.textEn ? project.customCTA.textEn : project.customCTA.text}
             </p>
             {project.customCTA.type === 'video' ? (
-              <a href={project.customCTA.url} target="_blank" rel="noopener noreferrer" style={{ 
-                display: 'inline-flex', 
-                alignItems: 'center', 
-                gap: '8px', 
-                color: 'var(--accent-primary)', 
-                fontWeight: 600, 
-                textDecoration: 'none',
-                transition: 'transform 0.2s ease'
-              }}
-              onMouseOver={(e) => e.currentTarget.style.transform = 'translateY(-2px)'}
-              onMouseOut={(e) => e.currentTarget.style.transform = 'translateY(0)'}>
-                <FaExternalLinkAlt size={18} /> {isEnglish ? 'Watch on GitHub' : 'Ver en GitHub'}
+              <a href={project.customCTA.url} target="_blank" rel="noopener noreferrer" className="custom-cta-link video">
+                <FaExternalLinkAlt size={15} /> {isEnglish ? 'Watch on GitHub' : 'Ver en GitHub'}
               </a>
             ) : (
-              <a href={project.customCTA.url} target="_blank" rel="noopener noreferrer" style={{ 
-                display: 'inline-flex', 
-                alignItems: 'center', 
-                gap: '8px', 
-                color: '#25D366', 
-                fontWeight: 600, 
-                textDecoration: 'none',
-                transition: 'transform 0.2s ease'
-              }}
-              onMouseOver={(e) => e.currentTarget.style.transform = 'translateY(-2px)'}
-              onMouseOut={(e) => e.currentTarget.style.transform = 'translateY(0)'}>
-                <FaWhatsapp size={20} /> {t('projects.whatsapp_cta', 'Hablar por WhatsApp')}
+              <a href={project.customCTA.url} target="_blank" rel="noopener noreferrer" className="custom-cta-link whatsapp">
+                <FaWhatsapp size={17} /> {t('projects.whatsapp_cta', 'Hablar por WhatsApp')}
               </a>
             )}
           </div>

@@ -75,7 +75,50 @@
   gap: var(--spacing-sm);
   margin-top: auto;
   padding-top: var(--spacing-sm);
-  margin-bottom: var(--spacing-md);
+  margin-bottom: 0;
+}
+
+.custom-cta-box {
+  margin-top: var(--spacing-sm);
+  padding: 0.6rem 0.85rem;
+  background-color: rgba(37, 211, 102, 0.05);
+  border: 1px solid rgba(37, 211, 102, 0.28);
+  border-radius: var(--radius-md);
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.custom-cta-text {
+  margin: 0;
+  font-size: 0.84rem;
+  line-height: 1.35;
+  color: var(--text-primary);
+  font-weight: 500;
+}
+
+.custom-cta-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: transform 0.2s ease;
+}
+
+.custom-cta-link.whatsapp {
+  color: #25D366;
+}
+
+.custom-cta-link.video {
+  color: var(--accent-primary);
+}
+
+@media (hover: hover) {
+  .custom-cta-link:hover {
+    transform: translateY(-2px);
+  }
 }
 
 .tech-badge {
