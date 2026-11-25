@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 200" width="1200" height="200" role="img" aria-label="Portfolio Architecture and CI/CD Pipeline">
+  <defs>
+    <linearGradient id="bgPipe" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#090b10"/>
+      <stop offset="50%" stop-color="#0d121c"/>
+      <stop offset="100%" stop-color="#090b10"/>
+    </linearGradient>
+
+    <linearGradient id="packetGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#3b82f6" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#60a5fa" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#10b981" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <style>
+    .sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, Roboto, sans-serif; }
+    .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; }
+
+    @keyframes dashFlow {
+      to { stroke-dashoffset: -28; }
+    }
+    @keyframes nodePulse1 {
+      0%, 100% { stroke-opacity: 0.35; }
+      20% { stroke-opacity: 0.95; }
+    }
+    @keyframes nodePulse2 {
+      0%, 100% { stroke-opacity: 0.35; }
+      45% { stroke-opacity: 0.95; }
+    }
+    @keyframes nodePulse3 {
+      0%, 100% { stroke-opacity: 0.35; }
+      70% { stroke-opacity: 0.95; }
+    }
+    @keyframes nodePulse4 {
+      0%, 100% { stroke-opacity: 0.35; }
+      90% { stroke-opacity: 0.95; }
+    }
+
+    .flow-line {
+      stroke-dasharray: 8 6;
+      animation: dashFlow 1.2s linear infinite;
+    }
+    .n1 { animation: nodePulse1 4s ease-in-out infinite; }
+    .n2 { animation: nodePulse2 4s ease-in-out infinite; }
+    .n3 { animation: nodePulse3 4s ease-in-out infinite; }
+    .n4 { animation: nodePulse4 4s ease-in-out infinite; }
+  </style>
+
+  <rect x="2" y="2" width="1196" height="196" rx="16" fill="url(#bgPipe)" stroke="rgba(255,255,255,0.10)" stroke-width="1.5"/>
+
+  <text x="600" y="34" text-anchor="middle" fill="#71717a" font-size="11.5" font-weight="600" letter-spacing="1.5" class="mono">ARCHITECTURE &amp; CONTINUOUS DEPLOYMENT FLOW</text>
+
+  <!-- Animated connectors -->
+  <line class="flow-line" x1="252" y1="108" x2="338" y2="108" stroke="#3b82f6" stroke-width="2"/>
+  <line class="flow-line" x1="542" y1="108" x2="628" y2="108" stroke="#8b5cf6" stroke-width="2"/>
+  <line class="flow-line" x1="832" y1="108" x2="918" y2="108" stroke="#10b981" stroke-width="2"/>
+
+  <!-- Traveling data dots -->
+  <circle r="4" fill="#60a5fa">
+    <animate attributeName="cx" values="252;338" dur="1.4s" repeatCount="indefinite"/>
+    <animate attributeName="cy" values="108;108" dur="1.4s" repeatCount="indefinite"/>
+  </circle>
+  <circle r="4" fill="#a78bfa">
+    <animate attributeName="cx" values="542;628" dur="1.4s" begin="0.45s" repeatCount="indefinite"/>
+    <animate attributeName="cy" values="108;108" dur="1.4s" begin="0.45s" repeatCount="indefinite"/>
+  </circle>
+  <circle r="4" fill="#34d399">
+    <animate attributeName="cx" values="832;918" dur="1.4s" begin="0.9s" repeatCount="indefinite"/>
+    <animate attributeName="cy" values="108;108" dur="1.4s" begin="0.9s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Node 1 -->
+  <rect class="n1" x="48" y="64" width="204" height="88" rx="12" fill="#121622" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="150" y="92" text-anchor="middle" fill="#60a5fa" font-size="12" font-weight="700" class="mono">01 · DATA &amp; I18N</text>
+  <text x="150" y="116" text-anchor="middle" fill="#ffffff" font-size="14" font-weight="600" class="sans">projects.ts</text>
+  <text x="150" y="136" text-anchor="middle" fill="#a1a1aa" font-size="11.5" class="mono">es.json / en.json</text>
+
+  <!-- Node 2 -->
+  <rect class="n2" x="338" y="64" width="204" height="88" rx="12" fill="#121622" stroke="#8b5cf6" stroke-width="1.5"/>
+  <text x="440" y="92" text-anchor="middle" fill="#a78bfa" font-size="12" font-weight="700" class="mono">02 · UI &amp; MOTION</text>
+  <text x="440" y="116" text-anchor="middle" fill="#ffffff" font-size="14" font-weight="600" class="sans">React 19 + Vite 8</text>
+  <text x="440" y="136" text-anchor="middle" fill="#a1a1aa" font-size="11.5" class="mono">ThemeSwitcher · WebP</text>
+
+  <!-- Node 3 -->
+  <rect class="n3" x="628" y="64" width="204" height="88" rx="12" fill="#121622" stroke="#f97316" stroke-width="1.5"/>
+  <text x="730" y="92" text-anchor="middle" fill="#fb923c" font-size="12" font-weight="700" class="mono">03 · CI PIPELINE</text>
+  <text x="730" y="116" text-anchor="middle" fill="#ffffff" font-size="14" font-weight="600" class="sans">GitHub Actions</text>
+  <text x="730" y="136" text-anchor="middle" fill="#a1a1aa" font-size="11.5" class="mono">tsc -b · vite build</text>
+
+  <!-- Node 4 -->
+  <rect class="n4" x="918" y="64" width="234" height="88" rx="12" fill="#121622" stroke="#10b981" stroke-width="1.5"/>
+  <text x="1035" y="92" text-anchor="middle" fill="#34d399" font-size="12" font-weight="700" class="mono">04 · PRODUCTION</text>
+  <text x="1035" y="116" text-anchor="middle" fill="#ffffff" font-size="14" font-weight="600" class="sans">GitHub Pages</text>
+  <text x="1035" y="136" text-anchor="middle" fill="#a1a1aa" font-size="11.5" class="mono">rodria45.github.io</text>
+</svg>
