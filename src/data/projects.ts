@@ -80,9 +80,6 @@ import imgTallerMotos4 from '../assets/images/taller-motos-4.webp';
 
 import imgReflex1 from '../assets/images/reflex-trackmanager-1.webp';
 
-import imgTurnoNoche1 from '../assets/images/turno-noche-1.webp';
-import imgTurnoNoche2 from '../assets/images/turno-noche-2.webp';
-
 import imgLatinoStream1 from '../assets/images/latino-stream-1.webp';
 import imgLatinoStream2 from '../assets/images/latino-stream-2.webp';
 import imgLatinoStream3 from '../assets/images/latino-stream-3.webp';
@@ -210,19 +207,6 @@ export const projects: Project[] = [
       url: 'https://wa.me/5493865227220',
       type: 'whatsapp'
     }
-  },
-  {
-    id: 'el-turno-noche-hospital',
-    title: 'El Turno Noche: Hospital San Anselmo (3D)',
-    description: 'Juego 3D de terror psicológico en el navegador con Three.js y Vite. Incluye 5 capítulos, estética VHS, sigilo en casilleros, linterna física, audio espacial Web Audio y controles táctiles.',
-    descriptionEn: 'Browser-based 3D psychological horror game built with Three.js and Vite. Features 5 chapters, VHS aesthetics, locker stealth, physics flashlight, Web Audio 3D sound, and touch controls.',
-    technologies: ['Three.js', 'WebGL', 'Vite', 'Web Audio API', 'JavaScript'],
-    category: 'Frontend',
-    githubUrl: 'https://github.com/RodriA45/el-turno-noche-hospital',
-    demoUrl: 'https://el-turno-noche-hospital.vercel.app/',
-    imageUrl: imgTurnoNoche1,
-    imageUrls: [imgTurnoNoche1, imgTurnoNoche2],
-    featured: true
   },
   {
     id: 'taller-motos-antunez',
