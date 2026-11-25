@@ -11,14 +11,12 @@ import imgEstelar10 from '../assets/images/estelar-10.webp';
 import imgEstelar11 from '../assets/images/estelar-11.webp';
 import imgEstelar12 from '../assets/images/estelar-12.webp';
 import imgProfesor from '../assets/images/profesor-interactivo.webp';
-import imgFinTrack from '../assets/images/fin-track.webp';
 import imgJarvis from '../assets/images/jarvis.webp';
 import imgTurnos from '../assets/images/turnos-web.webp';
 import imgWinOptimizador from '../assets/images/win-optimizador.webp';
 import imgCleansweep from '../assets/images/cleansweep.webp';
 import imgFixture from '../assets/images/fixture-mundial.webp';
 import imgMacEstetica from '../assets/images/mac-estetica-vehicular.webp';
-import imgEnglish from '../assets/images/english.webp';
 import imgKatja from '../assets/images/katja-handmade.webp';
 import imgPataRed from '../assets/images/patared.webp';
 import imgStreamFlow from '../assets/images/streamflow.webp';
@@ -385,18 +383,6 @@ export const projects: Project[] = [
     isMockup: true
   },
   {
-    id: 'fintrack-finance-manager',
-    title: 'FinTrack App',
-    description: 'Aplicación SPA para la gestión de finanzas personales. Construida con un enfoque en la experiencia de usuario (UX) y componentes reutilizables, permitiendo un control de gastos intuitivo y rápido.',
-    descriptionEn: 'SPA application for personal finance management. Built with a focus on user experience (UX) and reusable components, allowing for intuitive and fast expense tracking.',
-    technologies: ['TypeScript', 'React', 'CSS'],
-    category: 'Frontend',
-    githubUrl: 'https://github.com/RodriA45/fintrack-finance-manager',
-    imageUrl: imgFinTrack,
-    featured: true,
-    isMockup: true
-  },
-  {
     id: 'jarvis-desktop-assistant',
     title: 'Jarvis Voice Assistant',
     description: 'Asistente holográfico de escritorio para Windows. Integración avanzada de APIs de inteligencia artificial (Claude, Gemini) y modelos locales (Ollama) para ejecutar comandos complejos de sistema mediante voz.',
@@ -419,17 +405,6 @@ export const projects: Project[] = [
     imageUrl: imgMacEstetica,
     featured: false,
     isMockup: true
-  },
-  {
-    id: 'english-for-developers',
-    title: 'English for Developers',
-    description: 'Plataforma SaaS educativa con mecánicas Drag & Drop para que desarrolladores practiquen inglés técnico. Arquitectura robusta y tipado estricto.',
-    descriptionEn: 'Educational SaaS platform with Drag & Drop mechanics for developers to practice technical English. Robust architecture and strict typing.',
-    technologies: ['React', 'TypeScript', 'CSS'],
-    category: 'Frontend',
-    githubUrl: 'https://github.com/RodriA45/english-for-developers',
-    imageUrl: imgEnglish,
-    featured: false
   },
   {
     id: 'cleansweep-dev',
