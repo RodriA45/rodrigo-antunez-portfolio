@@ -15,8 +15,6 @@ import imgJarvis from '../assets/images/jarvis.webp';
 import imgTurnos from '../assets/images/turnos-web.webp';
 import imgWinOptimizador from '../assets/images/win-optimizador.webp';
 import imgCleansweep from '../assets/images/cleansweep.webp';
-import imgFixture from '../assets/images/fixture-mundial.webp';
-import imgMacEstetica from '../assets/images/mac-estetica-vehicular.webp';
 import imgKatja from '../assets/images/katja-handmade.webp';
 import imgPataRed from '../assets/images/patared.webp';
 import imgStreamFlow from '../assets/images/streamflow.webp';
@@ -394,19 +392,6 @@ export const projects: Project[] = [
     featured: false
   },
   {
-    id: 'mac-estetica-vehicular',
-    title: 'Landing Page Corporativa',
-    description: 'Desarrollo Frontend para MAC Estética Vehicular. Diseño premium con alta conversión, enfocado en performance y SEO, incluyendo un comparador visual interactivo de "antes y después".',
-    descriptionEn: 'Corporate Landing Page Frontend development for MAC Estética Vehicular. High-conversion premium design, focused on performance and SEO, including an interactive visual "before and after" comparison.',
-    technologies: ['HTML', 'CSS', 'JavaScript'],
-    category: 'Frontend',
-    githubUrl: 'https://github.com/RodriA45/mac-estetica-vehicular',
-    demoUrl: 'https://rodria45.github.io/mac-estetica-vehicular/',
-    imageUrl: imgMacEstetica,
-    featured: false,
-    isMockup: true
-  },
-  {
     id: 'cleansweep-dev',
     title: 'CleanSweep CLI',
     description: 'Herramienta de línea de comandos que automatiza la purga de dependencias y cachés en entornos de desarrollo, optimizando los tiempos de backup en servidores.',
@@ -421,18 +406,6 @@ export const projects: Project[] = [
       url: 'https://wa.me/5493865227220',
       type: 'whatsapp'
     }
-  },
-  {
-    id: 'world-cup-2026-tracker',
-    title: 'World Cup 2026 Tracker',
-    description: 'Fixture interactivo SPA con persistencia de datos local para el Mundial 2026. Lógica de renderizado dinámico y manejo eficiente del estado.',
-    descriptionEn: 'Interactive SPA fixture with local data persistence for the 2026 World Cup. Dynamic rendering logic and efficient state management.',
-    technologies: ['JavaScript', 'HTML5', 'Local Storage'],
-    category: 'Frontend',
-    githubUrl: 'https://github.com/RodriA45/world-cup-2026-tracker',
-    demoUrl: 'https://rodria45.github.io/world-cup-2026-tracker/',
-    imageUrl: imgFixture,
-    featured: false
   },
   {
     id: 'win-optimizador-r45',
