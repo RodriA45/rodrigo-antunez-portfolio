@@ -85,6 +85,7 @@ import imgLatinoStream6 from '../assets/images/latino-stream-6.webp';
 
 import imgDriverVault1 from '../assets/images/drivervault-1.webp';
 import imgDriverVault2 from '../assets/images/drivervault-2.webp';
+import imgMxsRemastered1 from '../assets/images/mxs-remastered-1.webp';
 
 export interface Project {
   id: string;
@@ -243,6 +244,18 @@ export const projects: Project[] = [
     githubUrl: 'https://github.com/RodriA45/Reflex-TrackManager-2026',
     imageUrl: imgReflex1,
     imageUrls: [imgReflex1],
+    featured: false
+  },
+  {
+    id: 'mxs-remastered-rodri',
+    title: 'MXS Remastered - OpenGL Proxy (Win32)',
+    description: 'Adaptación Win32 (32-bit) para MX Simulator 2017 mediante proxy opengl32.dll: puente OpenGL 1.x a shaders GLSL 150, iluminación y clima dinámico, sombras 2048px, huellas y cámara 1ra persona.',
+    descriptionEn: 'Win32 (32-bit) adaptation for MX Simulator 2017 via an opengl32.dll proxy: bridges OpenGL 1.x to GLSL 150 shaders, adding dynamic lighting & weather, 2048px shadows, ruts, and first-person cam.',
+    technologies: ['C++', 'Win32 (x86)', 'OpenGL / GLSL 150', 'DLL Proxy'],
+    category: 'Data & Scripts',
+    githubUrl: 'https://github.com/RodriA45/MXS-Remastered-Rodri',
+    imageUrl: imgMxsRemastered1,
+    imageUrls: [imgMxsRemastered1],
     featured: false
   },
   {
